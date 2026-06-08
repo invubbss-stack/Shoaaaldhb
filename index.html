@@ -1,0 +1,1502 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="زيت شعاع الذهب - القوة الحقيقية من الطبيعة في كل قطرة. تركيبة من سبعة زيوت طبيعية لتطويل وتكثيف الشعر." />
+  <meta name="keywords" content="زيت شعاع الذهب, زيت شعر, تطويل الشعر, تكثيف الشعر, زيوت طبيعية" />
+  <title>زيت شعاع الذهب | القوة الحقيقية من الطبيعة</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    /* ===== CSS Variables ===== */
+    :root {
+      --gold: #D4AF37;
+      --gold-light: #F0D060;
+      --gold-dark: #A8861A;
+      --gold-glow: rgba(212, 175, 55, 0.4);
+      --black: #0A0A0A;
+      --dark: #111111;
+      --dark2: #1A1208;
+      --brown-royal: #3D1F00;
+      --brown-mid: #5C3200;
+      --brown-light: #8B5E1A;
+      --white: #FFFFFF;
+      --cream: #FFF8E7;
+      --text-light: rgba(255,255,255,0.85);
+      --text-muted: rgba(255,255,255,0.55);
+      --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --shadow-gold: 0 0 30px rgba(212,175,55,0.35), 0 0 60px rgba(212,175,55,0.15);
+      --shadow-card: 0 20px 60px rgba(0,0,0,0.5);
+    }
+
+    /* ===== Reset & Base ===== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Tajawal', sans-serif;
+      background: var(--black);
+      color: var(--white);
+      direction: rtl;
+      overflow-x: hidden;
+      line-height: 1.7;
+    }
+    img { max-width: 100%; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== Scrollbar ===== */
+    ::-webkit-scrollbar { width: 6px; }
+    ::-webkit-scrollbar-track { background: var(--dark); }
+    ::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+    /* ===== Particles Background ===== */
+    #particles-canvas {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.4;
+    }
+
+    /* ===== Navbar ===== */
+    .navbar {
+      position: fixed;
+      top: 0; right: 0; left: 0;
+      z-index: 1000;
+      padding: 18px 5%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(10,10,10,0.85);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(212,175,55,0.2);
+      transition: var(--transition);
+    }
+    .navbar.scrolled {
+      padding: 12px 5%;
+      background: rgba(10,10,10,0.97);
+    }
+    .nav-logo {
+      font-family: 'Amiri', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold), var(--gold-dark));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: 1px;
+    }
+    .nav-cta {
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      color: var(--black);
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 10px 22px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 4px 15px var(--gold-glow);
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .nav-cta:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px var(--gold-glow);
+    }
+    .nav-cta svg { width: 18px; height: 18px; }
+
+    /* ===== Hero Section ===== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 100px 5% 60px;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% 30%, rgba(212,175,55,0.12) 0%, transparent 70%),
+        radial-gradient(ellipse 60% 80% at 80% 50%, rgba(92,50,0,0.3) 0%, transparent 60%),
+        linear-gradient(180deg, #0A0A0A 0%, #1A0E00 50%, #0A0A0A 100%);
+      z-index: 1;
+    }
+    .hero-bg-img {
+      position: absolute;
+      inset: 0;
+      background-image: url('hero-bottle.png');
+      background-size: cover;
+      background-position: center top;
+      opacity: 0.18;
+      z-index: 0;
+      filter: blur(2px) saturate(1.5);
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    .hero-text { order: 1; }
+    .hero-image-wrap { order: 2; display: flex; justify-content: center; align-items: center; }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(212,175,55,0.12);
+      border: 1px solid rgba(212,175,55,0.4);
+      border-radius: 50px;
+      padding: 8px 18px;
+      font-size: 0.85rem;
+      color: var(--gold-light);
+      margin-bottom: 24px;
+      backdrop-filter: blur(10px);
+      animation: fadeInDown 0.8s ease both;
+    }
+    .hero-badge-dot {
+      width: 8px; height: 8px;
+      background: var(--gold);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    .hero-title {
+      font-family: 'Amiri', serif;
+      font-size: clamp(2.8rem, 6vw, 5rem);
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 16px;
+      background: linear-gradient(135deg, #FFFFFF 0%, var(--gold-light) 40%, var(--gold) 70%, var(--gold-dark) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: fadeInUp 0.9s ease 0.2s both;
+    }
+    .hero-subtitle {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: var(--text-light);
+      margin-bottom: 32px;
+      font-weight: 300;
+      animation: fadeInUp 0.9s ease 0.35s both;
+    }
+
+    .hero-features {
+      list-style: none;
+      margin-bottom: 36px;
+      animation: fadeInUp 0.9s ease 0.5s both;
+    }
+    .hero-features li {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 8px 0;
+      font-size: 1.05rem;
+      color: var(--text-light);
+      border-bottom: 1px solid rgba(212,175,55,0.1);
+    }
+    .hero-features li:last-child { border-bottom: none; }
+    .hero-features li .feat-icon {
+      color: var(--gold);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+
+    .hero-badges-row {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 36px;
+      animation: fadeInUp 0.9s ease 0.65s both;
+    }
+    .hero-info-badge {
+      background: rgba(212,175,55,0.1);
+      border: 1px solid rgba(212,175,55,0.35);
+      border-radius: 12px;
+      padding: 12px 20px;
+      text-align: center;
+      backdrop-filter: blur(10px);
+    }
+    .hero-info-badge .badge-num {
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--gold);
+      display: block;
+    }
+    .hero-info-badge .badge-label {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .hero-cta-group {
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      animation: fadeInUp 0.9s ease 0.8s both;
+    }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      color: var(--white);
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 16px 32px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 6px 25px rgba(37,211,102,0.35);
+      text-decoration: none;
+    }
+    .btn-primary:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 12px 35px rgba(37,211,102,0.5);
+    }
+    .btn-primary svg { width: 22px; height: 22px; }
+
+    /* Hero Image */
+    .hero-image-container {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero-glow-ring {
+      position: absolute;
+      width: 420px; height: 420px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(212,175,55,0.2) 0%, transparent 70%);
+      animation: glowPulse 3s ease-in-out infinite;
+    }
+    .hero-glow-ring-2 {
+      position: absolute;
+      width: 520px; height: 520px;
+      border-radius: 50%;
+      border: 1px solid rgba(212,175,55,0.15);
+      animation: rotateSlow 20s linear infinite;
+    }
+    .hero-glow-ring-3 {
+      position: absolute;
+      width: 600px; height: 600px;
+      border-radius: 50%;
+      border: 1px dashed rgba(212,175,55,0.08);
+      animation: rotateSlow 35s linear infinite reverse;
+    }
+    .hero-bottle-img {
+      position: relative;
+      z-index: 2;
+      width: min(380px, 90vw);
+      border-radius: 20px;
+      filter: drop-shadow(0 20px 60px rgba(212,175,55,0.4));
+      animation: floatBottle 4s ease-in-out infinite, fadeInRight 1s ease 0.3s both;
+      object-fit: cover;
+    }
+    .hero-seven-badge {
+      position: absolute;
+      bottom: 20px;
+      left: -20px;
+      z-index: 3;
+      width: 110px; height: 110px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      border-radius: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 30px rgba(212,175,55,0.5);
+      animation: fadeInUp 1s ease 0.8s both;
+      border: 3px solid rgba(255,255,255,0.3);
+    }
+    .hero-seven-badge .num { font-size: 2.2rem; font-weight: 900; color: var(--black); line-height: 1; }
+    .hero-seven-badge .label { font-size: 0.6rem; font-weight: 700; color: var(--brown-royal); text-align: center; line-height: 1.3; }
+
+    /* ===== Section Common ===== */
+    section { position: relative; z-index: 1; }
+    .section-header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+    .section-tag {
+      display: inline-block;
+      background: rgba(212,175,55,0.12);
+      border: 1px solid rgba(212,175,55,0.3);
+      color: var(--gold);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 50px;
+      margin-bottom: 16px;
+    }
+    .section-title {
+      font-family: 'Amiri', serif;
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--white) 0%, var(--gold-light) 50%, var(--gold) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 16px;
+    }
+    .section-divider {
+      width: 80px; height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 0 auto 20px;
+      border-radius: 2px;
+    }
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      max-width: 600px;
+      margin: 0 auto;
+      line-height: 1.8;
+    }
+
+    /* ===== Why Section ===== */
+    .why-section {
+      padding: 100px 5%;
+      background: linear-gradient(180deg, var(--black) 0%, var(--dark2) 50%, var(--black) 100%);
+    }
+    .why-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .why-card {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(212,175,55,0.15);
+      border-radius: 20px;
+      padding: 36px 28px;
+      text-align: center;
+      transition: var(--transition);
+      backdrop-filter: blur(10px);
+      position: relative;
+      overflow: hidden;
+    }
+    .why-card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 3px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      transform: scaleX(0);
+      transition: var(--transition);
+    }
+    .why-card:hover { transform: translateY(-8px); border-color: rgba(212,175,55,0.4); box-shadow: var(--shadow-gold); }
+    .why-card:hover::before { transform: scaleX(1); }
+    .why-icon {
+      width: 70px; height: 70px;
+      background: linear-gradient(135deg, rgba(212,175,55,0.15), rgba(212,175,55,0.05));
+      border: 1px solid rgba(212,175,55,0.3);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      font-size: 1.8rem;
+    }
+    .why-card h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 10px;
+    }
+    .why-card p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ===== Oils Section ===== */
+    .oils-section {
+      padding: 100px 5%;
+      background: linear-gradient(180deg, var(--black) 0%, #0D0800 50%, var(--black) 100%);
+      position: relative;
+      overflow: hidden;
+    }
+    .oils-section::before {
+      content: '';
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 800px; height: 800px;
+      background: radial-gradient(circle, rgba(212,175,55,0.05) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .oils-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .oil-card {
+      text-align: center;
+      transition: var(--transition);
+      cursor: default;
+    }
+    .oil-card:hover { transform: translateY(-10px); }
+    .oil-img-wrap {
+      width: 130px; height: 130px;
+      border-radius: 50%;
+      margin: 0 auto 16px;
+      overflow: hidden;
+      border: 3px solid rgba(212,175,55,0.3);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.4), 0 0 0 6px rgba(212,175,55,0.05);
+      transition: var(--transition);
+      position: relative;
+    }
+    .oil-card:hover .oil-img-wrap {
+      border-color: var(--gold);
+      box-shadow: 0 12px 40px rgba(212,175,55,0.35), 0 0 0 8px rgba(212,175,55,0.1);
+    }
+    .oil-img-wrap img {
+      width: 100%; height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+    .oil-card:hover .oil-img-wrap img { transform: scale(1.1); }
+    .oil-num {
+      position: absolute;
+      top: 5px; right: 5px;
+      width: 26px; height: 26px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.7rem;
+      font-weight: 800;
+      color: var(--black);
+    }
+    .oil-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 6px;
+    }
+    .oil-benefit {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Oil placeholder images using CSS gradients */
+    .oil-placeholder {
+      width: 100%; height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+    }
+    .oil-p1 { background: linear-gradient(135deg, #8B6914, #C9A227); }
+    .oil-p2 { background: linear-gradient(135deg, #1A1A1A, #3D3D3D); }
+    .oil-p3 { background: linear-gradient(135deg, #4A7C1F, #7AB648); }
+    .oil-p4 { background: linear-gradient(135deg, #C9A227, #F0D060); }
+    .oil-p5 { background: linear-gradient(135deg, #3D1F00, #8B5E1A); }
+    .oil-p6 { background: linear-gradient(135deg, #8B4513, #D2691E); }
+    .oil-p7 { background: linear-gradient(135deg, #F5F5DC, #FFFACD); }
+
+    /* ===== Usage Section ===== */
+    .usage-section {
+      padding: 100px 5%;
+      background: var(--black);
+    }
+    .usage-timeline {
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .usage-timeline::before {
+      content: '';
+      position: absolute;
+      right: 35px;
+      top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(180deg, transparent, var(--gold), var(--gold), transparent);
+    }
+    .usage-step {
+      display: flex;
+      align-items: flex-start;
+      gap: 24px;
+      margin-bottom: 40px;
+      padding-right: 80px;
+      position: relative;
+      transition: var(--transition);
+    }
+    .usage-step:hover { transform: translateX(-8px); }
+    .step-num {
+      position: absolute;
+      right: 18px;
+      width: 36px; height: 36px;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 0.9rem;
+      color: var(--black);
+      flex-shrink: 0;
+      box-shadow: 0 4px 15px var(--gold-glow);
+      z-index: 1;
+    }
+    .step-content {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(212,175,55,0.15);
+      border-radius: 16px;
+      padding: 24px 28px;
+      flex: 1;
+      backdrop-filter: blur(10px);
+      transition: var(--transition);
+    }
+    .usage-step:hover .step-content {
+      border-color: rgba(212,175,55,0.35);
+      background: rgba(212,175,55,0.05);
+    }
+    .step-content h3 {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--gold-light);
+      margin-bottom: 6px;
+    }
+    .step-content p {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ===== Testimonials ===== */
+    .testimonials-section {
+      padding: 100px 5%;
+      background: linear-gradient(180deg, var(--black) 0%, var(--dark2) 100%);
+      overflow: hidden;
+    }
+    .testimonials-slider-wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      position: relative;
+    }
+    .testimonials-slider {
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    .testimonials-track {
+      display: flex;
+      transition: transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .testimonial-card {
+      min-width: 100%;
+      padding: 50px 60px;
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(212,175,55,0.2);
+      border-radius: 20px;
+      text-align: center;
+      backdrop-filter: blur(15px);
+      position: relative;
+    }
+    .testimonial-card::before {
+      content: '"';
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      font-family: 'Amiri', serif;
+      font-size: 8rem;
+      color: rgba(212,175,55,0.08);
+      line-height: 1;
+    }
+    .stars {
+      display: flex;
+      justify-content: center;
+      gap: 4px;
+      margin-bottom: 20px;
+    }
+    .star { color: var(--gold); font-size: 1.3rem; }
+    .testimonial-text {
+      font-size: 1.15rem;
+      color: var(--text-light);
+      line-height: 1.8;
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+    }
+    .author-avatar {
+      width: 48px; height: 48px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: var(--black);
+      border: 2px solid rgba(212,175,55,0.4);
+    }
+    .author-info .name { font-weight: 700; color: var(--gold-light); font-size: 1rem; }
+    .author-info .role { font-size: 0.8rem; color: var(--text-muted); }
+
+    .slider-controls {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-top: 30px;
+    }
+    .slider-btn {
+      width: 44px; height: 44px;
+      border-radius: 50%;
+      background: rgba(212,175,55,0.1);
+      border: 1px solid rgba(212,175,55,0.3);
+      color: var(--gold);
+      font-size: 1.2rem;
+      cursor: pointer;
+      transition: var(--transition);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .slider-btn:hover { background: var(--gold); color: var(--black); }
+    .slider-dots {
+      display: flex;
+      gap: 8px;
+    }
+    .dot {
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: rgba(212,175,55,0.3);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .dot.active { background: var(--gold); width: 24px; border-radius: 4px; }
+
+    /* ===== FAQ Section ===== */
+    .faq-section {
+      padding: 100px 5%;
+      background: var(--black);
+    }
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .faq-item {
+      background: rgba(255,255,255,0.03);
+      border: 1px solid rgba(212,175,55,0.15);
+      border-radius: 16px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .faq-item.open { border-color: rgba(212,175,55,0.4); }
+    .faq-question {
+      padding: 22px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      cursor: pointer;
+      font-size: 1.05rem;
+      font-weight: 600;
+      color: var(--white);
+      transition: var(--transition);
+      gap: 16px;
+    }
+    .faq-question:hover { color: var(--gold-light); }
+    .faq-icon {
+      width: 28px; height: 28px;
+      border-radius: 50%;
+      background: rgba(212,175,55,0.1);
+      border: 1px solid rgba(212,175,55,0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--gold);
+      font-size: 1.1rem;
+      transition: var(--transition);
+    }
+    .faq-item.open .faq-icon { background: var(--gold); color: var(--black); transform: rotate(45deg); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.4s ease;
+      padding: 0 28px;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.8;
+    }
+    .faq-item.open .faq-answer { max-height: 200px; padding: 0 28px 22px; }
+
+    /* ===== CTA Section ===== */
+    .cta-section {
+      padding: 100px 5%;
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+    .cta-bg {
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse 70% 80% at 50% 50%, rgba(212,175,55,0.15) 0%, transparent 70%),
+        linear-gradient(135deg, #0D0800 0%, #1A0E00 50%, #0D0800 100%);
+    }
+    .cta-border {
+      position: absolute;
+      inset: 20px;
+      border: 1px solid rgba(212,175,55,0.15);
+      border-radius: 30px;
+      pointer-events: none;
+    }
+    .cta-content {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .cta-title {
+      font-family: 'Amiri', serif;
+      font-size: clamp(2rem, 4vw, 3.2rem);
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--white), var(--gold-light), var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 16px;
+      line-height: 1.3;
+    }
+    .cta-subtitle {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+      margin-bottom: 40px;
+    }
+    .btn-cta-large {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      color: var(--white);
+      font-weight: 800;
+      font-size: 1.2rem;
+      padding: 20px 48px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: 0 8px 30px rgba(37,211,102,0.4);
+      text-decoration: none;
+      animation: ctaPulse 2.5s ease-in-out infinite;
+    }
+    .btn-cta-large:hover {
+      transform: translateY(-4px) scale(1.03);
+      box-shadow: 0 16px 45px rgba(37,211,102,0.55);
+      animation: none;
+    }
+    .btn-cta-large svg { width: 26px; height: 26px; }
+
+    /* ===== Footer ===== */
+    .footer {
+      padding: 50px 5% 30px;
+      background: var(--dark);
+      border-top: 1px solid rgba(212,175,55,0.15);
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'Amiri', serif;
+      font-size: 2rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, var(--gold-light), var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 12px;
+    }
+    .footer-tagline {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 30px;
+    }
+    .footer-divider {
+      width: 100px; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+      margin: 0 auto 20px;
+    }
+    .footer-copy {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.25);
+    }
+
+    /* ===== Floating WhatsApp ===== */
+    .float-whatsapp {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      z-index: 9999;
+      width: 60px; height: 60px;
+      background: linear-gradient(135deg, #25D366, #128C7E);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 25px rgba(37,211,102,0.5);
+      cursor: pointer;
+      transition: var(--transition);
+      animation: floatWA 3s ease-in-out infinite;
+      text-decoration: none;
+    }
+    .float-whatsapp:hover {
+      transform: scale(1.15);
+      box-shadow: 0 10px 35px rgba(37,211,102,0.65);
+      animation: none;
+    }
+    .float-whatsapp svg { width: 30px; height: 30px; fill: white; }
+    .float-whatsapp-tooltip {
+      position: absolute;
+      right: 70px;
+      background: rgba(10,10,10,0.9);
+      color: var(--white);
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 8px 14px;
+      border-radius: 8px;
+      white-space: nowrap;
+      border: 1px solid rgba(212,175,55,0.2);
+      opacity: 0;
+      transform: translateX(10px);
+      transition: var(--transition);
+      pointer-events: none;
+    }
+    .float-whatsapp:hover .float-whatsapp-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .float-whatsapp-tooltip::after {
+      content: '';
+      position: absolute;
+      top: 50%; right: -6px;
+      transform: translateY(-50%);
+      border: 6px solid transparent;
+      border-right: none;
+      border-left-color: rgba(212,175,55,0.3);
+    }
+
+    /* ===== Scroll Reveal ===== */
+    .reveal {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: opacity 0.8s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(50px);
+      transition: opacity 0.8s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    .reveal-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .reveal-scale {
+      opacity: 0;
+      transform: scale(0.85);
+      transition: opacity 0.8s cubic-bezier(0.25,0.46,0.45,0.94), transform 0.8s cubic-bezier(0.25,0.46,0.45,0.94);
+    }
+    .reveal-scale.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    /* ===== Animations ===== */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInRight {
+      from { opacity: 0; transform: translateX(40px); }
+      to { opacity: 1; transform: translateX(0); }
+    }
+    @keyframes floatBottle {
+      0%, 100% { transform: translateY(0px) rotate(0deg); }
+      50% { transform: translateY(-15px) rotate(1deg); }
+    }
+    @keyframes floatWA {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes glowPulse {
+      0%, 100% { opacity: 0.6; transform: scale(1); }
+      50% { opacity: 1; transform: scale(1.1); }
+    }
+    @keyframes rotateSlow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.5; transform: scale(0.8); }
+    }
+    @keyframes ctaPulse {
+      0%, 100% { box-shadow: 0 8px 30px rgba(37,211,102,0.4); }
+      50% { box-shadow: 0 8px 50px rgba(37,211,102,0.65); }
+    }
+    @keyframes shimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 900px) {
+      .hero-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+      }
+      .hero-text { order: 2; }
+      .hero-image-wrap { order: 1; }
+      .hero-features li { justify-content: center; }
+      .hero-badges-row { justify-content: center; }
+      .hero-cta-group { justify-content: center; }
+      .hero-glow-ring { width: 300px; height: 300px; }
+      .hero-glow-ring-2 { width: 380px; height: 380px; }
+      .hero-glow-ring-3 { width: 450px; height: 450px; }
+      .hero-seven-badge { left: 10px; width: 90px; height: 90px; }
+      .hero-seven-badge .num { font-size: 1.8rem; }
+      .usage-timeline::before { right: 18px; }
+      .usage-step { padding-right: 55px; }
+      .step-num { right: 0; }
+      .testimonial-card { padding: 40px 30px; }
+    }
+    @media (max-width: 600px) {
+      .navbar { padding: 14px 4%; }
+      .nav-logo { font-size: 1.3rem; }
+      .nav-cta { padding: 8px 16px; font-size: 0.82rem; }
+      .hero { padding: 90px 4% 50px; }
+      .oils-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
+      .oil-img-wrap { width: 90px; height: 90px; }
+      .why-cards { grid-template-columns: 1fr 1fr; }
+      .testimonial-card { padding: 30px 20px; }
+      .testimonial-card::before { font-size: 5rem; }
+      .float-whatsapp { bottom: 20px; left: 20px; width: 52px; height: 52px; }
+      .float-whatsapp svg { width: 26px; height: 26px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Particles Canvas -->
+<canvas id="particles-canvas"></canvas>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-logo">شعاع الذهب</div>
+  <a href="https://wa.me/967772913503?text=السلام عليكم، أرغب بطلب زيت شعاع الذهب." target="_blank" class="nav-cta">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    اطلب الآن
+  </a>
+</nav>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="home">
+  <div class="hero-bg-img"></div>
+  <div class="hero-bg"></div>
+  <div class="hero-content">
+    <!-- Text -->
+    <div class="hero-text">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        منتج طبيعي 100%
+      </div>
+      <h1 class="hero-title">زيت شعاع الذهب</h1>
+      <p class="hero-subtitle">القوة الحقيقية من الطبيعة في كل قطرة</p>
+      <ul class="hero-features">
+        <li><span class="feat-icon">✨</span> لتطويل وتكثيف الشعر</li>
+        <li><span class="feat-icon">✨</span> علاج القشرة ومنع تساقط الشعر</li>
+        <li><span class="feat-icon">✨</span> ليمنحك نعومة الحرير ولمعاناً ساحراً</li>
+        <li><span class="feat-icon">✨</span> قوة وحيوية تدوم</li>
+      </ul>
+      <div class="hero-badges-row">
+        <div class="hero-info-badge">
+          <span class="badge-num">7</span>
+          <span class="badge-label">زيوت طبيعية</span>
+        </div>
+        <div class="hero-info-badge">
+          <span class="badge-num">200</span>
+          <span class="badge-label">مل</span>
+        </div>
+        <div class="hero-info-badge">
+          <span class="badge-num">100%</span>
+          <span class="badge-label">طبيعي</span>
+        </div>
+      </div>
+      <div class="hero-cta-group">
+        <a href="https://wa.me/967772913503?text=السلام عليكم، أرغب بطلب زيت شعاع الذهب." target="_blank" class="btn-primary">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          اطلب الآن عبر واتساب
+        </a>
+      </div>
+    </div>
+    <!-- Image -->
+    <div class="hero-image-wrap">
+      <div class="hero-image-container">
+        <div class="hero-glow-ring"></div>
+        <div class="hero-glow-ring-2"></div>
+        <div class="hero-glow-ring-3"></div>
+        <img src="hero-bottle.png" alt="زيت شعاع الذهب" class="hero-bottle-img" loading="eager" />
+        <div class="hero-seven-badge">
+          <span class="num">7</span>
+          <span class="label">زيوت<br>طبيعية</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY SECTION ===== -->
+<section class="why-section" id="why">
+  <div class="section-header reveal">
+    <div class="section-tag">لماذا نحن</div>
+    <h2 class="section-title">لماذا زيت شعاع الذهب؟</h2>
+    <div class="section-divider"></div>
+    <p class="section-desc">تركيبة طبيعية متوازنة من سبعة زيوت مختارة بعناية لتغذية الشعر من الجذور حتى الأطراف، والمساعدة على زيادة الكثافة والنعومة واللمعان.</p>
+  </div>
+  <div class="why-cards">
+    <div class="why-card reveal" style="transition-delay:0.1s">
+      <div class="why-icon">🌿</div>
+      <h3>مكونات طبيعية</h3>
+      <p>مستخلص من أفضل الزيوت الطبيعية دون إضافات كيميائية ضارة</p>
+    </div>
+    <div class="why-card reveal" style="transition-delay:0.2s">
+      <div class="why-icon">⚡</div>
+      <h3>امتصاص سريع</h3>
+      <p>تركيبة خفيفة تتغلغل بسرعة في فروة الرأس وجذور الشعر</p>
+    </div>
+    <div class="why-card reveal" style="transition-delay:0.3s">
+      <div class="why-icon">💎</div>
+      <h3>تغذية عميقة</h3>
+      <p>يصل إلى أعماق بصيلات الشعر لتغذيتها وتقويتها من الداخل</p>
+    </div>
+    <div class="why-card reveal" style="transition-delay:0.4s">
+      <div class="why-icon">✨</div>
+      <h3>مناسب لجميع أنواع الشعر</h3>
+      <p>فعّال للشعر الجاف والدهني والمختلط والمصبوغ والتالف</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== OILS SECTION ===== -->
+<section class="oils-section" id="oils">
+  <div class="section-header reveal">
+    <div class="section-tag">المكونات</div>
+    <h2 class="section-title">الزيوت السبعة الطبيعية</h2>
+    <div class="section-divider"></div>
+    <p class="section-desc">مزيج فريد من أقوى الزيوت الطبيعية المعروفة بفوائدها الاستثنائية للشعر</p>
+  </div>
+  <div class="oils-grid">
+    <div class="oil-card reveal" style="transition-delay:0.05s">
+      <div class="oil-img-wrap">
+        <div class="oil-placeholder oil-p1">🌾</div>
+        <div class="oil-num">١</div>
+      </div>
+      <div class="oil-name">زيت الحلبة</div>
+      <div class="oil-benefit">يقوي الجذور ويحفز نمو الشعر</div>
+    </div>
+    <div class="oil-card reveal" style="transition-delay:0.1s">
+      <div class="oil-img-wrap">
+        <div class="oil-placeholder oil-p2">🌑</div>
+        <div class="oil-num">٢</div>
+      </div>
+      <div class="oil-name">زيت الحبة السوداء</div>
+      <div class="oil-benefit">يعالج القشرة ويمنع التساقط</div>
+    </div>
+    <div class="oil-card reveal" style="transition-delay:0.15s">
+      <div class="oil-img-wrap">
+        <div class="oil-placeholder oil-p3">🫒</div>
+        <div class="oil-num">٣</div>
+      </div>
+      <div class="oil-name">زيت الزيتون</div>
+      <div class="oil-benefit">يرطّب ويلمّع ويحمي الشعر</div>
+    </div>
+    <div class="oil-card reveal" style="transition-delay:0.2s">
+      <div class="oil-img-wrap">
+        <div class="oil-placeholder oil-p4">🌰</div>
+        <div class="oil-num">٤</div>
+      </div>
+      <div class="oil-name">زيت اللوز الحلو</div>
+      <div class="oil-benefit">يمنح النعومة ويقلل التقصف</div>
+    </div>
+    <div class="oil-card reveal" style="transition-delay:0.25s">
+      <div class="oil-img-wrap">
+        <div class="oil-placeholder oil-p5">🌿</div>
+        <div class="oil-num">٥</div>
+      </div>
+      <div class="oil-name">زيت الخروع</div>
+      <div class="oil-benefit">يكثّف الشعر ويطيله بفاعلية</div>
+    </div>
+    <div class="oil-card reveal" style="transition-delay:0.3s">
+      <div class="oil-img-wrap">
+        <div class="oil-placeholder oil-p6">🍂</div>
+        <div class="oil-num">٦</div>
+      </div>
+      <div class="oil-name">زيت الأرغان</div>
+      <div class="oil-benefit">يصلح التلف ويضيف البريق</div>
+    </div>
+    <div class="oil-card reveal" style="transition-delay:0.35s">
+      <div class="oil-img-wrap">
+        <div class="oil-placeholder oil-p7">🥥</div>
+        <div class="oil-num">٧</div>
+      </div>
+      <div class="oil-name">زيت جوز الهند</div>
+      <div class="oil-benefit">يغذي عمقياً ويحمي من الحرارة</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== USAGE SECTION ===== -->
+<section class="usage-section" id="usage">
+  <div class="section-header reveal">
+    <div class="section-tag">كيفية الاستخدام</div>
+    <h2 class="section-title">طريقة الاستخدام</h2>
+    <div class="section-divider"></div>
+    <p class="section-desc">اتبع هذه الخطوات البسيطة للحصول على أفضل النتائج</p>
+  </div>
+  <div class="usage-timeline">
+    <div class="usage-step reveal" style="transition-delay:0.1s">
+      <div class="step-num">١</div>
+      <div class="step-content">
+        <h3>المساج والتطبيق</h3>
+        <p>يتم عمل مساج لفروة الرأس والشعر بالكامل من الزيت بحركات دائرية لتحفيز الدورة الدموية</p>
+      </div>
+    </div>
+    <div class="usage-step reveal" style="transition-delay:0.2s">
+      <div class="step-num">٢</div>
+      <div class="step-content">
+        <h3>التغطية والانتظار</h3>
+        <p>يترك لمدة ساعتين مع تغطية الشعر بكيس أو غطاء مناسب لتعزيز الامتصاص العميق</p>
+      </div>
+    </div>
+    <div class="usage-step reveal" style="transition-delay:0.3s">
+      <div class="step-num">٣</div>
+      <div class="step-content">
+        <h3>الغسيل</h3>
+        <p>يغسل بالشامبو المناسب لنوع شعرك حتى ينظف تماماً ويظهر الشعر لامعاً ومنتعشاً</p>
+      </div>
+    </div>
+    <div class="usage-step reveal" style="transition-delay:0.4s">
+      <div class="step-num">٤</div>
+      <div class="step-content">
+        <h3>التكرار الأمثل</h3>
+        <p>يستخدم مرة أو مرتين أسبوعياً للحصول على أفضل النتائج في أقصر وقت ممكن</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== TESTIMONIALS SECTION ===== -->
+<section class="testimonials-section" id="reviews">
+  <div class="section-header reveal">
+    <div class="section-tag">آراء العملاء</div>
+    <h2 class="section-title">ماذا يقول عملاؤنا؟</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="testimonials-slider-wrap reveal">
+    <div class="testimonials-slider">
+      <div class="testimonials-track" id="testimonials-track">
+        <!-- Slide 1 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-text">"لاحظت فرقاً واضحاً في كثافة الشعر بعد أسابيع قليلة فقط من الاستخدام. شعري أصبح أقوى وأكثر حيوية من أي وقت مضى."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ن</div>
+            <div class="author-info">
+              <div class="name">نورة العتيبي</div>
+              <div class="role">عميلة موثّقة</div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 2 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-text">"أصبح شعري أكثر نعومة ولمعاناً بشكل ملحوظ. الرائحة جميلة والزيت خفيف جداً على الشعر ولا يتركه دهنياً."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">م</div>
+            <div class="author-info">
+              <div class="name">منى الشهري</div>
+              <div class="role">عميلة موثّقة</div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 3 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-text">"منتج رائع وسهل الاستخدام. حل مشكلة تساقط الشعر التي كنت أعاني منها منذ سنوات. أنصح به بشدة لكل من يعاني من نفس المشكلة."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">ر</div>
+            <div class="author-info">
+              <div class="name">ريم القحطاني</div>
+              <div class="role">عميلة موثّقة</div>
+            </div>
+          </div>
+        </div>
+        <!-- Slide 4 -->
+        <div class="testimonial-card">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-text">"جربت كثيراً من المنتجات لكن شعاع الذهب هو الأفضل على الإطلاق. شعري الآن يشبه الحرير ولا أستطيع الاستغناء عنه."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">س</div>
+            <div class="author-info">
+              <div class="name">سارة المطيري</div>
+              <div class="role">عميلة موثّقة</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="slider-controls">
+      <button class="slider-btn" id="prev-btn" aria-label="السابق">&#8250;</button>
+      <div class="slider-dots" id="slider-dots">
+        <div class="dot active" data-index="0"></div>
+        <div class="dot" data-index="1"></div>
+        <div class="dot" data-index="2"></div>
+        <div class="dot" data-index="3"></div>
+      </div>
+      <button class="slider-btn" id="next-btn" aria-label="التالي">&#8249;</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FAQ SECTION ===== -->
+<section class="faq-section" id="faq">
+  <div class="section-header reveal">
+    <div class="section-tag">الأسئلة الشائعة</div>
+    <h2 class="section-title">أسئلة يطرحها العملاء</h2>
+    <div class="section-divider"></div>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item reveal" style="transition-delay:0.1s">
+      <div class="faq-question">
+        <span>هل المنتج مناسب للرجال والنساء؟</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-answer">نعم، زيت شعاع الذهب مناسب تماماً للرجال والنساء على حدٍّ سواء. تركيبته الطبيعية تعمل بفاعلية لجميع أنواع الشعر بغض النظر عن الجنس أو العمر.</div>
+    </div>
+    <div class="faq-item reveal" style="transition-delay:0.2s">
+      <div class="faq-question">
+        <span>هل يناسب جميع أنواع الشعر؟</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-answer">نعم، الزيت مناسب لجميع أنواع الشعر سواء كان جافاً أو دهنياً أو مختلطاً أو مصبوغاً أو تالفاً. تركيبته المتوازنة تتكيف مع احتياجات كل نوع من أنواع الشعر.</div>
+    </div>
+    <div class="faq-item reveal" style="transition-delay:0.3s">
+      <div class="faq-question">
+        <span>كم مرة يستخدم أسبوعياً؟</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-answer">يُنصح باستخدام الزيت مرة إلى مرتين أسبوعياً للحصول على أفضل النتائج. يمكن زيادة التكرار في حالات التساقط الشديد بعد استشارة متخصص.</div>
+    </div>
+    <div class="faq-item reveal" style="transition-delay:0.4s">
+      <div class="faq-question">
+        <span>متى تظهر النتائج؟</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-answer">تبدأ النتائج الأولية في الظهور خلال 2-4 أسابيع من الاستخدام المنتظم. للحصول على نتائج مثالية في الكثافة والطول يُنصح بالاستمرار لمدة 3 أشهر.</div>
+    </div>
+    <div class="faq-item reveal" style="transition-delay:0.5s">
+      <div class="faq-question">
+        <span>هل يحتوي على مواد كيميائية ضارة؟</span>
+        <span class="faq-icon">+</span>
+      </div>
+      <div class="faq-answer">لا، زيت شعاع الذهب مكوّن من زيوت طبيعية 100% دون أي إضافات كيميائية أو مواد حافظة ضارة. آمن تماماً للاستخدام اليومي.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA SECTION ===== -->
+<section class="cta-section" id="order">
+  <div class="cta-bg"></div>
+  <div class="cta-border"></div>
+  <div class="cta-content reveal">
+    <div class="section-tag">اطلب الآن</div>
+    <h2 class="cta-title">ابدأ رحلتك نحو شعر أكثر قوة وكثافة</h2>
+    <p class="cta-subtitle">لا تتردد، شعرك يستحق الأفضل. اطلب الآن واحصل على منتجك في أسرع وقت.</p>
+    <a href="https://wa.me/967772913503?text=السلام عليكم، أرغب بطلب زيت شعاع الذهب." target="_blank" class="btn-cta-large">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      اطلب الآن عبر واتساب
+    </a>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer-logo">شعاع الذهب</div>
+  <p class="footer-tagline">القوة الحقيقية من الطبيعة في كل قطرة</p>
+  <div class="footer-divider"></div>
+  <p class="footer-copy">© 2026 زيت شعاع الذهب — جميع الحقوق محفوظة</p>
+</footer>
+
+<!-- ===== FLOATING WHATSAPP ===== -->
+<a href="https://wa.me/967772913503?text=السلام عليكم، أرغب بطلب زيت شعاع الذهب." target="_blank" class="float-whatsapp" aria-label="تواصل عبر واتساب">
+  <span class="float-whatsapp-tooltip">اطلب عبر واتساب</span>
+  <svg viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+
+<!-- ===== JAVASCRIPT ===== -->
+<script>
+  // ===== Particles =====
+  (function() {
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    let particles = [];
+    let W, H;
+
+    function resize() {
+      W = canvas.width = window.innerWidth;
+      H = canvas.height = window.innerHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize);
+
+    function createParticle() {
+      return {
+        x: Math.random() * W,
+        y: Math.random() * H,
+        r: Math.random() * 2 + 0.5,
+        dx: (Math.random() - 0.5) * 0.4,
+        dy: -Math.random() * 0.6 - 0.2,
+        alpha: Math.random() * 0.6 + 0.2,
+        color: Math.random() > 0.5 ? '#D4AF37' : '#F0D060'
+      };
+    }
+
+    for (let i = 0; i < 80; i++) particles.push(createParticle());
+
+    function animate() {
+      ctx.clearRect(0, 0, W, H);
+      particles.forEach((p, i) => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = p.color;
+        ctx.globalAlpha = p.alpha;
+        ctx.fill();
+        p.x += p.dx;
+        p.y += p.dy;
+        if (p.y < -5 || p.x < -5 || p.x > W + 5) {
+          particles[i] = createParticle();
+          particles[i].y = H + 5;
+        }
+      });
+      ctx.globalAlpha = 1;
+      requestAnimationFrame(animate);
+    }
+    animate();
+  })();
+
+  // ===== Navbar Scroll =====
+  window.addEventListener('scroll', function() {
+    const nav = document.getElementById('navbar');
+    if (window.scrollY > 50) nav.classList.add('scrolled');
+    else nav.classList.remove('scrolled');
+  });
+
+  // ===== Scroll Reveal =====
+  const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-scale');
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  revealEls.forEach(el => observer.observe(el));
+
+  // ===== Testimonials Slider =====
+  (function() {
+    const track = document.getElementById('testimonials-track');
+    const dots = document.querySelectorAll('.dot');
+    const prevBtn = document.getElementById('prev-btn');
+    const nextBtn = document.getElementById('next-btn');
+    let current = 0;
+    const total = 4;
+    let autoTimer;
+
+    function goTo(index) {
+      current = (index + total) % total;
+      track.style.transform = `translateX(${current * 100}%)`;
+      dots.forEach((d, i) => d.classList.toggle('active', i === current));
+    }
+
+    function next() { goTo(current - 1); }
+    function prev() { goTo(current + 1); }
+
+    nextBtn.addEventListener('click', () => { next(); resetAuto(); });
+    prevBtn.addEventListener('click', () => { prev(); resetAuto(); });
+    dots.forEach(d => d.addEventListener('click', () => { goTo(+d.dataset.index); resetAuto(); }));
+
+    function resetAuto() {
+      clearInterval(autoTimer);
+      autoTimer = setInterval(next, 4500);
+    }
+    resetAuto();
+  })();
+
+  // ===== FAQ Accordion =====
+  document.querySelectorAll('.faq-question').forEach(q => {
+    q.addEventListener('click', function() {
+      const item = this.closest('.faq-item');
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+
+  // ===== Smooth scroll for nav links =====
+  document.querySelectorAll('a[href^="#"]').forEach(a => {
+    a.addEventListener('click', function(e) {
+      const target = document.querySelector(this.getAttribute('href'));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    });
+  });
+</script>
+</body>
+</html>
