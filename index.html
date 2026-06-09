@@ -557,6 +557,54 @@
     .video-stage { position: relative; min-height: 180px; display: grid; place-items: center; background: radial-gradient(circle at center, rgba(212,175,55,0.24), rgba(10,10,10,0.95)), url('hero-bottle.png') center/cover; }
     .play-pulse { width: 64px; height: 64px; border-radius: 50%; border: 2px solid rgba(255,255,255,0.7); display: grid; place-items: center; background: rgba(212,175,55,0.75); color: var(--black); font-size: 1.4rem; animation: videoPulse 1.8s ease-in-out infinite; }
     .video-caption { padding: 12px 16px; color: var(--text-light); font-size: 0.9rem; }
+    .auto-result-video {
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      max-height: 420px;
+      object-fit: cover;
+      background: var(--dark);
+      display: block;
+    }
+    .video-fallback-link {
+      color: var(--gold-light);
+      font-weight: 700;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+    .results-video-wrap {
+      max-width: 460px;
+      margin: 0 auto 34px;
+      border: 1px solid rgba(212,175,55,0.3);
+      border-radius: 24px;
+      overflow: hidden;
+      background: rgba(255,255,255,0.04);
+      box-shadow: var(--shadow-card);
+    }
+    .results-video-wrap .auto-result-video { aspect-ratio: 4 / 5; max-height: 560px; }
+    .comparison-photo {
+      position: relative;
+      min-height: 300px;
+      border-radius: 18px;
+      overflow: hidden;
+      margin-bottom: 16px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(212,175,55,0.18);
+    }
+    .comparison-photo img { width: 100%; height: 100%; min-height: 300px; object-fit: cover; }
+    .comparison-label {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: rgba(10,10,10,0.72);
+      border: 1px solid rgba(212,175,55,0.35);
+      color: var(--gold-light);
+      font-weight: 800;
+      backdrop-filter: blur(10px);
+    }
+    .after-before-grid.real-results { grid-template-columns: repeat(2, minmax(260px, 1fr)); }
+
 
     .detail-grid, .after-before-grid, .shipping-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; max-width: 1100px; margin: 42px auto 0; }
     .detail-card, .result-card, .shipping-card { background: rgba(255,255,255,0.035); border: 1px solid rgba(212,175,55,0.18); border-radius: 18px; padding: 22px; transition: var(--transition); }
@@ -1079,6 +1127,7 @@
       .countdown-label { grid-column: 1 / -1; }
       .detail-grid, .after-before-grid, .shipping-grid { grid-template-columns: 1fr; }
       .before-after-visual { grid-template-columns: 1fr; }
+      .after-before-grid.real-results { grid-template-columns: 1fr; }
       .testimonial-card { padding: 30px 20px; }
       .testimonial-card::before { font-size: 5rem; }
       .float-whatsapp { bottom: 20px; left: 20px; width: 52px; height: 52px; }
@@ -1157,9 +1206,12 @@
         </a>
         <button type="button" class="copy-link-btn" id="copy-link-btn">🔗 نسخ الرابط</button>
       </div>
-      <div class="hero-video-card" aria-label="فيديو قصير للمنتج">
-        <div class="video-stage"><span class="play-pulse">▶</span></div>
-        <div class="video-caption">فيديو سريع يبرز تركيبة الزيوت السبعة وطريقة الاستخدام خلال ثوانٍ.</div>
+      <div class="hero-video-card" aria-label="فيديو قبل وبعد استخدام زيت شعاع الذهب لمدة ثلاثة أسابيع">
+        <video class="auto-result-video" autoplay muted loop playsinline preload="metadata" poster="https://i.imgur.com/LoAHXF5.png">
+          <source src="https://i.imgur.com/DLijXXA.mp4" type="video/mp4" />
+          متصفحك لا يدعم تشغيل الفيديو. يمكنك مشاهدة الفيديو من الرابط التالي:
+        </video>
+        <div class="video-caption">فيديو قبل وبعد الاستخدام بثلاثة أسابيع — يعمل تلقائياً وبشكل متواصل داخل الصفحة. <a class="video-fallback-link" href="https://imgur.com/a/DLijXXA" target="_blank" rel="noopener">مشاهدة المصدر</a></div>
       </div>
     </div>
     <!-- Image -->
@@ -1297,18 +1349,31 @@
 <section class="results-section" id="results">
   <div class="section-header reveal">
     <div class="section-tag">النتائج</div>
-    <h2 class="section-title">قبل وبعد الاستخدام المنتظم</h2>
+    <h2 class="section-title">قبل وبعد الاستخدام بثلاثة أسابيع</h2>
     <div class="section-divider"></div>
-    <p class="section-desc">عرض بصري مبسّط لما يبحث عنه العملاء: مظهر أكثر كثافة، نعومة، ولمعاناً مع الالتزام بطريقة الاستخدام.</p>
+    <p class="section-desc">شاهد الفيديو والصور المرفقة لتوضيح الفرق بين قبل الاستخدام وبعد الاستمرار على زيت شعاع الذهب لمدة 3 أسابيع.</p>
   </div>
-  <div class="after-before-grid">
+  <div class="results-video-wrap reveal">
+    <video class="auto-result-video" autoplay muted loop playsinline preload="metadata" poster="https://i.imgur.com/LoAHXF5.png">
+      <source src="https://i.imgur.com/DLijXXA.mp4" type="video/mp4" />
+      متصفحك لا يدعم تشغيل الفيديو. يمكنك مشاهدة الفيديو عبر الرابط المرفق.
+    </video>
+    <div class="video-caption">الفيديو يعمل تلقائياً وبشكل متواصل. <a class="video-fallback-link" href="https://imgur.com/a/DLijXXA" target="_blank" rel="noopener">فتح الفيديو على Imgur</a></div>
+  </div>
+  <div class="after-before-grid real-results">
     <div class="result-card reveal">
-      <div class="before-after-visual"><div class="ba-panel before">قبل</div><div class="ba-panel after">بعد</div></div>
-      <h3>كثافة أوضح</h3><p>الاستخدام المنتظم يساعد على تقوية الجذور وتقليل مظهر الفراغات مع الوقت.</p>
+      <div class="comparison-photo">
+        <img src="https://i.imgur.com/LoAHXF5.png" alt="صورة قبل استخدام زيت شعاع الذهب" loading="lazy" referrerpolicy="no-referrer" />
+        <span class="comparison-label">قبل الاستخدام</span>
+      </div>
+      <h3>قبل الاستخدام</h3><p>صورة توضح حالة الشعر قبل بدء تجربة زيت شعاع الذهب.</p>
     </div>
     <div class="result-card reveal">
-      <div class="before-after-visual"><div class="ba-panel before">جاف</div><div class="ba-panel after">لامع</div></div>
-      <h3>نعومة ولمعان</h3><p>الزيوت المرطبة تقلل الجفاف والهيشان وتمنح الشعر مظهراً صحياً.</p>
+      <div class="comparison-photo">
+        <img src="https://i.imgur.com/71Ftvv1.png" alt="صورة بعد استخدام زيت شعاع الذهب لمدة ثلاثة أسابيع" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src='https://i.imgur.com/71Ftvv1.jpg';" />
+        <span class="comparison-label">بعد 3 أسابيع</span>
+      </div>
+      <h3>بعد الاستخدام</h3><p>صورة بعد الاستمرار على الاستخدام لمدة ثلاثة أسابيع لإبراز التحسن في المظهر والكثافة.</p>
     </div>
   </div>
 </section>
