@@ -1,0 +1,65 @@
+[
+  {
+    "id": "juices",
+    "emoji": "🍊",
+    "nameAr": "العصائر",
+    "nameEn": "Fresh Juices",
+    "atmosphere": "fresh oranges, water splash, ice cubes, green leaves, morning sunlight",
+    "gradient": "linear-gradient(135deg, rgba(255,122,0,.16), rgba(107,175,69,.14))",
+    "accent": "#FF7A00"
+  },
+  {
+    "id": "milkshake",
+    "emoji": "🥤",
+    "nameAr": "الميلك شيك",
+    "nameEn": "Milk Shakes",
+    "atmosphere": "milk splash, cream, chocolate, cookies",
+    "gradient": "linear-gradient(135deg, rgba(199,154,99,.18), rgba(249,168,38,.12))",
+    "accent": "#C79A63"
+  },
+  {
+    "id": "mixes",
+    "emoji": "🥑",
+    "nameAr": "الخلطات",
+    "nameEn": "Signature Mixes",
+    "atmosphere": "avocado, tropical fruit, layered smoothie, fresh leaves",
+    "gradient": "linear-gradient(135deg, rgba(107,175,69,.18), rgba(255,122,0,.10))",
+    "accent": "#6BAF45"
+  },
+  {
+    "id": "kunafa",
+    "emoji": "🧀",
+    "nameAr": "الكنافة",
+    "nameEn": "Kunafa",
+    "atmosphere": "golden lighting, steam, pistachio, cheese stretch",
+    "gradient": "linear-gradient(135deg, rgba(249,168,38,.18), rgba(199,154,99,.16))",
+    "accent": "#F9A826"
+  },
+  {
+    "id": "desserts",
+    "emoji": "🧇",
+    "nameAr": "قسم الحلا",
+    "nameEn": "Desserts",
+    "atmosphere": "chocolate drizzle, caramel, hazelnuts, warm pastry",
+    "gradient": "linear-gradient(135deg, rgba(199,154,99,.18), rgba(255,122,0,.10))",
+    "accent": "#C79A63"
+  },
+  {
+    "id": "flavors",
+    "emoji": "🍹",
+    "nameAr": "النكهات",
+    "nameEn": "Flavors",
+    "atmosphere": "mint, ice crystals, colorful drinks, citrus sparkle",
+    "gradient": "linear-gradient(135deg, rgba(107,175,69,.14), rgba(67,169,244,.10))",
+    "accent": "#6BAF45"
+  },
+  {
+    "id": "gallons",
+    "emoji": "🥤",
+    "nameAr": "قسم الجالون",
+    "nameEn": "Gallons",
+    "atmosphere": "family bottles, fresh juice, chilled glass, citrus",
+    "gradient": "linear-gradient(135deg, rgba(255,122,0,.12), rgba(249,168,38,.16))",
+    "accent": "#FF7A00"
+  }
+]
