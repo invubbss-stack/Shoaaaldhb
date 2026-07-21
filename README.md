@@ -36,6 +36,10 @@ python3 -m http.server 8000
 http://localhost:8000
 ```
 
+## حل تعارضات GitHub
+
+إذا ظهر تنبيه GitHub بأن الفرع يحتوي على تعارضات في `README.md` أو `index.html`، اتبع دليل الحل في `docs/resolve-github-conflicts.md`.
+
 ## جاهزية مستقبلية
 
 الهيكل الحالي مناسب للربط لاحقاً مع Firebase أو Supabase أو Node.js أو Laravel أو لوحة تحكم Admin Dashboard لأن بيانات المنيو مفصولة بالكامل في JSON وقابلة للتحويل لمصدر بيانات ديناميكي.
