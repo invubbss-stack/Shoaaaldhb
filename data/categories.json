@@ -1,30 +1,30 @@
 [
   {
+    "id": "mixes",
+    "emoji": "🥑",
+    "nameAr": "الخلطات",
+    "nameEn": "Mixes",
+    "atmosphere": "avocado, nuts, tropical smoothie layers, fresh leaves",
+    "gradient": "linear-gradient(135deg, rgba(107,175,69,.18), rgba(255,122,0,.10))",
+    "accent": "#6BAF45"
+  },
+  {
     "id": "juices",
     "emoji": "🍊",
     "nameAr": "العصائر",
-    "nameEn": "Fresh Juices",
+    "nameEn": "Juices",
     "atmosphere": "fresh oranges, water splash, ice cubes, green leaves, morning sunlight",
     "gradient": "linear-gradient(135deg, rgba(255,122,0,.16), rgba(107,175,69,.14))",
     "accent": "#FF7A00"
   },
   {
-    "id": "milkshake",
-    "emoji": "🥤",
-    "nameAr": "الميلك شيك",
-    "nameEn": "Milk Shakes",
-    "atmosphere": "milk splash, cream, chocolate, cookies",
-    "gradient": "linear-gradient(135deg, rgba(199,154,99,.18), rgba(249,168,38,.12))",
-    "accent": "#C79A63"
-  },
-  {
-    "id": "mixes",
-    "emoji": "🥑",
-    "nameAr": "الخلطات",
-    "nameEn": "Signature Mixes",
-    "atmosphere": "avocado, tropical fruit, layered smoothie, fresh leaves",
-    "gradient": "linear-gradient(135deg, rgba(107,175,69,.18), rgba(255,122,0,.10))",
-    "accent": "#6BAF45"
+    "id": "juice_addons",
+    "emoji": "🍍",
+    "nameAr": "إضافات العصائر",
+    "nameEn": "Juice Add-ons",
+    "atmosphere": "pressed orange, fruit salad, bright citrus counter",
+    "gradient": "linear-gradient(135deg, rgba(249,168,38,.16), rgba(107,175,69,.12))",
+    "accent": "#F9A826"
   },
   {
     "id": "kunafa",
@@ -39,9 +39,18 @@
     "id": "desserts",
     "emoji": "🧇",
     "nameAr": "قسم الحلا",
-    "nameEn": "Desserts",
+    "nameEn": "Dessert Section",
     "atmosphere": "chocolate drizzle, caramel, hazelnuts, warm pastry",
     "gradient": "linear-gradient(135deg, rgba(199,154,99,.18), rgba(255,122,0,.10))",
+    "accent": "#C79A63"
+  },
+  {
+    "id": "milkshake",
+    "emoji": "🥤",
+    "nameAr": "الميلك شيك",
+    "nameEn": "Milk Shake",
+    "atmosphere": "milk splash, cream, chocolate, cookies",
+    "gradient": "linear-gradient(135deg, rgba(199,154,99,.18), rgba(249,168,38,.12))",
     "accent": "#C79A63"
   },
   {
@@ -56,10 +65,28 @@
   {
     "id": "gallons",
     "emoji": "🥤",
-    "nameAr": "قسم الجالون",
-    "nameEn": "Gallons",
+    "nameAr": "قسم الجالون العصير",
+    "nameEn": "Juice Gallon Section",
     "atmosphere": "family bottles, fresh juice, chilled glass, citrus",
     "gradient": "linear-gradient(135deg, rgba(255,122,0,.12), rgba(249,168,38,.16))",
     "accent": "#FF7A00"
+  },
+  {
+    "id": "pressed_gallons",
+    "emoji": "🍊",
+    "nameAr": "الجالون الكبس",
+    "nameEn": "Pressed Gallon",
+    "atmosphere": "pressed citrus, family bottles, pure juice",
+    "gradient": "linear-gradient(135deg, rgba(255,122,0,.18), rgba(199,154,99,.12))",
+    "accent": "#FF7A00"
+  },
+  {
+    "id": "boxes",
+    "emoji": "🎁",
+    "nameAr": "عروض البوكسات والعائلي",
+    "nameEn": "Boxes & Family",
+    "atmosphere": "family offers, juice boxes, sharing moments",
+    "gradient": "linear-gradient(135deg, rgba(107,175,69,.14), rgba(249,168,38,.15))",
+    "accent": "#6BAF45"
   }
 ]

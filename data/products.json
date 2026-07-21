@@ -1,40 +1,2040 @@
 [
-  {"id":"orange","categoryId":"juices","nameAr":"برتقال","descriptionAr":"برتقال طازج مع ثلج خفيف ولمسة انتعاش صباحية.","calories":110,"sizes":[{"label":"S","price":8},{"label":"M","price":10},{"label":"L","price":12}],"image":"https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["bestSeller"],"featured":true},
-  {"id":"apple","categoryId":"juices","nameAr":"تفاح","descriptionAr":"تفاح طبيعي بنكهة نظيفة وخفيفة.","calories":125,"sizes":[{"label":"S","price":8},{"label":"M","price":10},{"label":"L","price":12}],"image":"https://images.pexels.com/photos/1510392/pexels-photo-1510392.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"pomegranate","categoryId":"juices","nameAr":"رمان","descriptionAr":"رمان غني بلون فاخر وطعم متوازن.","calories":150,"sizes":[{"label":"S","price":10},{"label":"M","price":12},{"label":"L","price":15}],"image":"https://images.pexels.com/photos/1435735/pexels-photo-1435735.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["new"],"featured":true},
-  {"id":"grape","categoryId":"juices","nameAr":"عنب","descriptionAr":"عنب بارد ومنعش بقوام ناعم.","calories":145,"sizes":[{"label":"S","price":8},{"label":"M","price":10},{"label":"L","price":12}],"image":"https://images.pexels.com/photos/708777/pexels-photo-708777.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"lemon","categoryId":"juices","nameAr":"ليمون","descriptionAr":"ليمون منعش يوازن الحموضة والحلاوة.","calories":90,"sizes":[{"label":"S","price":7},{"label":"M","price":9},{"label":"L","price":11}],"image":"https://images.pexels.com/photos/1414122/pexels-photo-1414122.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"strawberry","categoryId":"juices","nameAr":"فراولة","descriptionAr":"فراولة طازجة بلون وردي طبيعي.","calories":135,"sizes":[{"label":"S","price":9},{"label":"M","price":11},{"label":"L","price":14}],"image":"https://images.pexels.com/photos/1435904/pexels-photo-1435904.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"mango","categoryId":"juices","nameAr":"مانجو","descriptionAr":"مانجو كريمية غنية بطعم استوائي فاخر.","calories":180,"sizes":[{"label":"S","price":10},{"label":"M","price":12},{"label":"L","price":15}],"image":"https://images.pexels.com/photos/2294477/pexels-photo-2294477.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["bestSeller"],"featured":true},
-  {"id":"guava","categoryId":"juices","nameAr":"جوافة","descriptionAr":"جوافة طبيعية بقوام ناعم ورائحة منعشة.","calories":160,"sizes":[{"label":"S","price":9},{"label":"M","price":11},{"label":"L","price":14}],"image":"https://images.pexels.com/photos/5945761/pexels-photo-5945761.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"cocktail","categoryId":"juices","nameAr":"كوكتيل","descriptionAr":"مزيج فواكه طبقات بنكهة غنية ومظهر فاخر.","calories":210,"sizes":[{"label":"S","price":11},{"label":"M","price":14},{"label":"L","price":17}],"image":"https://images.pexels.com/photos/5416259/pexels-photo-5416259.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["new"],"featured":true},
-  {"id":"shake-strawberry","categoryId":"milkshake","nameAr":"ميلك شيك فراولة","descriptionAr":"حليب بارد مع فراولة وكريمة خفيفة.","calories":320,"sizes":[{"label":"كوب","price":16}],"image":"https://images.pexels.com/photos/880509/pexels-photo-880509.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["bestSeller"]},
-  {"id":"shake-oreo","categoryId":"milkshake","nameAr":"ميلك شيك أوريو","descriptionAr":"أوريو مطحون مع آيس كريم وقوام مخملي.","calories":430,"sizes":[{"label":"كوب","price":18}],"image":"https://images.pexels.com/photos/12066979/pexels-photo-12066979.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["new"]},
-  {"id":"shake-banana","categoryId":"milkshake","nameAr":"ميلك شيك موز","descriptionAr":"موز طبيعي مع حليب بارد ونعومة كريمية.","calories":340,"sizes":[{"label":"كوب","price":16}],"image":"https://images.pexels.com/photos/4443487/pexels-photo-4443487.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"shake-mocha","categoryId":"milkshake","nameAr":"ميلك شيك موكا","descriptionAr":"قهوة وشوكولاتة باردة بطابع فاخر.","calories":390,"sizes":[{"label":"كوب","price":18}],"image":"https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"shake-lotus","categoryId":"milkshake","nameAr":"ميلك شيك لوتس","descriptionAr":"لوتس كريمي مع كراميل وقرمشة بسكويت.","calories":460,"sizes":[{"label":"كوب","price":20}],"image":"https://images.pexels.com/photos/4109998/pexels-photo-4109998.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["bestSeller"]},
-  {"id":"shake-pistachio","categoryId":"milkshake","nameAr":"ميلك شيك فستق","descriptionAr":"فستق فاخر بطابع مخملي ولون طبيعي.","calories":410,"sizes":[{"label":"كوب","price":20}],"image":"https://images.pexels.com/photos/5946965/pexels-photo-5946965.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"avocado-mix","categoryId":"mixes","nameAr":"أفوكادو خلطة","descriptionAr":"أفوكادو غني مع لمسات عسل ومكسرات.","calories":360,"sizes":[{"label":"M","price":18},{"label":"L","price":22}],"image":"https://images.pexels.com/photos/5945807/pexels-photo-5945807.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["bestSeller"],"featured":true},
-  {"id":"avocado-mango","categoryId":"mixes","nameAr":"أفوكادو مانجو","descriptionAr":"طبقات أفوكادو ومانجو بنكهة استوائية.","calories":380,"sizes":[{"label":"M","price":19},{"label":"L","price":23}],"image":"https://images.pexels.com/photos/616836/pexels-photo-616836.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"avocado-strawberry","categoryId":"mixes","nameAr":"أفوكادو فراولة","descriptionAr":"أفوكادو كريمي مع فراولة منعشة.","calories":370,"sizes":[{"label":"M","price":19},{"label":"L","price":23}],"image":"https://images.pexels.com/photos/775032/pexels-photo-775032.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"adani-cocktail","categoryId":"mixes","nameAr":"كوكتيل عدني","descriptionAr":"خلطة عدنية غنية بالفواكه والقشطة.","calories":420,"sizes":[{"label":"M","price":20},{"label":"L","price":25}],"image":"https://images.pexels.com/photos/5650049/pexels-photo-5650049.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["new"]},
-  {"id":"mixed-fruit","categoryId":"mixes","nameAr":"فواكه مشكلة","descriptionAr":"كأس فواكه طازجة بتنسيق أنيق.","calories":260,"sizes":[{"label":"كوب","price":18}],"image":"https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"kunafa-soft","categoryId":"kunafa","nameAr":"كنافة ناعمة","descriptionAr":"كنافة ناعمة ذهبية مع جبن وقشطة.","calories":520,"sizes":[{"label":"صغير","price":12},{"label":"وسط","price":20},{"label":"كبير","price":35},{"label":"جامبو","price":55}],"image":"https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["bestSeller"],"featured":true},
-  {"id":"kunafa-coarse","categoryId":"kunafa","nameAr":"كنافة خشنة","descriptionAr":"خيوط كنافة مقرمشة مع حشوة غنية.","calories":540,"sizes":[{"label":"صغير","price":12},{"label":"وسط","price":20},{"label":"كبير","price":35},{"label":"جامبو","price":55}],"image":"https://images.pexels.com/photos/1437267/pexels-photo-1437267.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"kunafa-nutella","categoryId":"kunafa","nameAr":"كنافة نوتيلا","descriptionAr":"كنافة ذهبية مع شوكولاتة نوتيلا.","calories":650,"sizes":[{"label":"صغير","price":15},{"label":"وسط","price":25},{"label":"كبير","price":40},{"label":"جامبو","price":65}],"image":"https://images.pexels.com/photos/3026803/pexels-photo-3026803.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["new"]},
-  {"id":"kunafa-lotus","categoryId":"kunafa","nameAr":"كنافة لوتس","descriptionAr":"لوتس كريمي مع كنافة ساخنة ومقرمشة.","calories":680,"sizes":[{"label":"صغير","price":15},{"label":"وسط","price":25},{"label":"كبير","price":40},{"label":"جامبو","price":65}],"image":"https://images.pexels.com/photos/4109998/pexels-photo-4109998.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"kunafa-mango","categoryId":"kunafa","nameAr":"كنافة مانجو","descriptionAr":"مانجو طازجة فوق طبقة كنافة ناعمة.","calories":610,"sizes":[{"label":"صغير","price":15},{"label":"وسط","price":25},{"label":"كبير","price":40},{"label":"جامبو","price":65}],"image":"https://images.pexels.com/photos/2294477/pexels-photo-2294477.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"kunafa-pistachio","categoryId":"kunafa","nameAr":"كنافة فستق","descriptionAr":"فستق فاخر مع كنافة ذهبية ساخنة.","calories":690,"sizes":[{"label":"صغير","price":17},{"label":"وسط","price":28},{"label":"كبير","price":45},{"label":"جامبو","price":70}],"image":"https://images.pexels.com/photos/110812/pexels-photo-110812.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["bestSeller"]},
-  {"id":"pancake","categoryId":"desserts","nameAr":"بانكيك","descriptionAr":"طبقات بانكيك ناعمة مع صوص حسب الاختيار.","calories":480,"sizes":[{"label":"طبق","price":22}],"image":"https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"waffle","categoryId":"desserts","nameAr":"وافل","descriptionAr":"وافل مقرمش مع شوكولاتة وفواكه.","calories":560,"sizes":[{"label":"طبق","price":24}],"image":"https://images.pexels.com/photos/789327/pexels-photo-789327.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["bestSeller"]},
-  {"id":"crepe","categoryId":"desserts","nameAr":"كريب","descriptionAr":"كريب رقيق مع صوص غني وحشوة فاخرة.","calories":590,"sizes":[{"label":"طبق","price":25}],"image":"https://images.pexels.com/photos/3225499/pexels-photo-3225499.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["new"]},
-  {"id":"seven","categoryId":"flavors","nameAr":"سفن","descriptionAr":"نكهة غازية منعشة مع ثلج وليمون.","calories":120,"sizes":[{"label":"كوب","price":10}],"image":"https://images.pexels.com/photos/96974/pexels-photo-96974.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"mojito","categoryId":"flavors","nameAr":"موهيتو","descriptionAr":"نعناع وليمون وفقاعات باردة.","calories":95,"sizes":[{"label":"كوب","price":14}],"image":"https://images.pexels.com/photos/28902894/pexels-photo-28902894.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["bestSeller"]},
-  {"id":"passion","categoryId":"flavors","nameAr":"باشن","descriptionAr":"باشن فروت استوائي بطعم لاذع وفاخر.","calories":130,"sizes":[{"label":"كوب","price":14}],"image":"https://images.pexels.com/photos/1337825/pexels-photo-1337825.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["new"]},
-  {"id":"blue","categoryId":"flavors","nameAr":"بلو","descriptionAr":"نكهة بلو باردة مع ثلج كريستالي.","calories":125,"sizes":[{"label":"كوب","price":14}],"image":"https://images.pexels.com/photos/616833/pexels-photo-616833.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"gallon-1","categoryId":"gallons","nameAr":"1 لتر","descriptionAr":"جالون عصير طازج للمشاركة.","calories":520,"sizes":[{"label":"1 لتر","price":28}],"image":"https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"gallon-1-5","categoryId":"gallons","nameAr":"1.5 لتر","descriptionAr":"حجم عائلي متوسط بطعم طازج.","calories":780,"sizes":[{"label":"1.5 لتر","price":38}],"image":"https://images.pexels.com/photos/1580532/pexels-photo-1580532.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"gallon-2","categoryId":"gallons","nameAr":"2 لتر","descriptionAr":"اختيار مناسب للجمعات والضيافة.","calories":1040,"sizes":[{"label":"2 لتر","price":48}],"image":"https://images.pexels.com/photos/5946617/pexels-photo-5946617.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["bestSeller"]},
-  {"id":"gallon-3","categoryId":"gallons","nameAr":"3 لتر","descriptionAr":"جالون كبير للحفلات والطلبات الكبيرة.","calories":1560,"sizes":[{"label":"3 لتر","price":68}],"image":"https://images.pexels.com/photos/4443492/pexels-photo-4443492.jpeg?auto=compress&cs=tinysrgb&w=900","badges":[]},
-  {"id":"gallon-5","categoryId":"gallons","nameAr":"5 لتر","descriptionAr":"أكبر حجم للضيافة والمناسبات.","calories":2600,"sizes":[{"label":"5 لتر","price":105}],"image":"https://images.pexels.com/photos/4443496/pexels-photo-4443496.jpeg?auto=compress&cs=tinysrgb&w=900","badges":["new"]}
+  {
+    "id": "arasi-malaki",
+    "categoryId": "mixes",
+    "nameAr": "عرايسي ملكي",
+    "nameEn": "Arasi Malaki",
+    "descriptionAr": "عرايسي ملكي من منيو ركن الجليد الأصلي.",
+    "calories": 705,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5945807/pexels-photo-5945807.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [
+      "bestSeller"
+    ],
+    "featured": true
+  },
+  {
+    "id": "avocado-mango",
+    "categoryId": "mixes",
+    "nameAr": "أفوكادو مانجو",
+    "nameEn": "Avocado Mango",
+    "descriptionAr": "أفوكادو مانجو من منيو ركن الجليد الأصلي.",
+    "calories": 1080,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5945807/pexels-photo-5945807.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "nuts-mix",
+    "categoryId": "mixes",
+    "nameAr": "خلطة مكسرات",
+    "nameEn": "Nuts Mix",
+    "descriptionAr": "خلطة مكسرات من منيو ركن الجليد الأصلي.",
+    "calories": 1120,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5945807/pexels-photo-5945807.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "avocado-malaki",
+    "categoryId": "mixes",
+    "nameAr": "أفوكادو ملكي",
+    "nameEn": "Avocado Malaki",
+    "descriptionAr": "أفوكادو ملكي من منيو ركن الجليد الأصلي.",
+    "calories": 900,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5945807/pexels-photo-5945807.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [
+      "bestSeller"
+    ],
+    "featured": true
+  },
+  {
+    "id": "mango-jalapeno",
+    "categoryId": "mixes",
+    "nameAr": "مانجو فلبينو",
+    "nameEn": "Mango Jalapeno",
+    "descriptionAr": "مانجو فلبينو من منيو ركن الجليد الأصلي.",
+    "calories": 400,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5945807/pexels-photo-5945807.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "asfahani",
+    "categoryId": "mixes",
+    "nameAr": "أصفهاني",
+    "nameEn": "Asfahani",
+    "descriptionAr": "أصفهاني من منيو ركن الجليد الأصلي.",
+    "calories": 468,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5945807/pexels-photo-5945807.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "adeni-cocktail",
+    "categoryId": "mixes",
+    "nameAr": "كوكتيل عدني",
+    "nameEn": "Adeni Cocktail",
+    "descriptionAr": "كوكتيل عدني من منيو ركن الجليد الأصلي.",
+    "calories": 420,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5945807/pexels-photo-5945807.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [
+      "bestSeller"
+    ],
+    "featured": true
+  },
+  {
+    "id": "samdo",
+    "categoryId": "mixes",
+    "nameAr": "صمدو",
+    "nameEn": "Samdo",
+    "descriptionAr": "صمدو من منيو ركن الجليد الأصلي.",
+    "calories": 760,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5945807/pexels-photo-5945807.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "awar-qalb",
+    "categoryId": "mixes",
+    "nameAr": "عوار قلب",
+    "nameEn": "Awar Qalb",
+    "descriptionAr": "عوار قلب من منيو ركن الجليد الأصلي.",
+    "calories": 780,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5945807/pexels-photo-5945807.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "lamasat",
+    "categoryId": "mixes",
+    "nameAr": "لمسات",
+    "nameEn": "Lamasat",
+    "descriptionAr": "لمسات من منيو ركن الجليد الأصلي.",
+    "calories": 650,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5945807/pexels-photo-5945807.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "frenchy",
+    "categoryId": "mixes",
+    "nameAr": "فرنسي",
+    "nameEn": "Frenchy",
+    "descriptionAr": "فرنسي من منيو ركن الجليد الأصلي.",
+    "calories": 650,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5945807/pexels-photo-5945807.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "king-power",
+    "categoryId": "mixes",
+    "nameAr": "قوة الأسد",
+    "nameEn": "King Power",
+    "descriptionAr": "قوة الأسد من منيو ركن الجليد الأصلي.",
+    "calories": 788,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5945807/pexels-photo-5945807.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "einstein",
+    "categoryId": "mixes",
+    "nameAr": "أنشتاين",
+    "nameEn": "Einstein",
+    "descriptionAr": "أنشتاين من منيو ركن الجليد الأصلي.",
+    "calories": 750,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5945807/pexels-photo-5945807.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "tabaqat",
+    "categoryId": "mixes",
+    "nameAr": "طبقات",
+    "nameEn": "Tabaqat",
+    "descriptionAr": "طبقات من منيو ركن الجليد الأصلي.",
+    "calories": 653,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5945807/pexels-photo-5945807.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "watermelon",
+    "categoryId": "juices",
+    "nameAr": "بطيخ",
+    "nameEn": "watermelon",
+    "descriptionAr": "بطيخ من منيو ركن الجليد الأصلي.",
+    "calories": 250,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [
+      "bestSeller"
+    ],
+    "featured": true
+  },
+  {
+    "id": "pomegranate",
+    "categoryId": "juices",
+    "nameAr": "رمان",
+    "nameEn": "pomegranate",
+    "descriptionAr": "رمان من منيو ركن الجليد الأصلي.",
+    "calories": 130,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [],
+    "featured": true
+  },
+  {
+    "id": "pineapple",
+    "categoryId": "juices",
+    "nameAr": "أناناس",
+    "nameEn": "Pineapple",
+    "descriptionAr": "أناناس من منيو ركن الجليد الأصلي.",
+    "calories": 380,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "grape",
+    "categoryId": "juices",
+    "nameAr": "عنب",
+    "nameEn": "Grape",
+    "descriptionAr": "عنب من منيو ركن الجليد الأصلي.",
+    "calories": 140,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "orange",
+    "categoryId": "juices",
+    "nameAr": "برتقال",
+    "nameEn": "Orange",
+    "descriptionAr": "برتقال من منيو ركن الجليد الأصلي.",
+    "calories": 112,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [
+      "bestSeller"
+    ],
+    "featured": true
+  },
+  {
+    "id": "melon",
+    "categoryId": "juices",
+    "nameAr": "شمام",
+    "nameEn": "Melon",
+    "descriptionAr": "شمام من منيو ركن الجليد الأصلي.",
+    "calories": 150,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "lemon",
+    "categoryId": "juices",
+    "nameAr": "ليمون",
+    "nameEn": "Lemon",
+    "descriptionAr": "ليمون من منيو ركن الجليد الأصلي.",
+    "calories": 10,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "guava",
+    "categoryId": "juices",
+    "nameAr": "جوافة",
+    "nameEn": "Guava",
+    "descriptionAr": "جوافة من منيو ركن الجليد الأصلي.",
+    "calories": 112,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "strawberry",
+    "categoryId": "juices",
+    "nameAr": "فراولة",
+    "nameEn": "Strawberry",
+    "descriptionAr": "فراولة من منيو ركن الجليد الأصلي.",
+    "calories": 135,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "moroccan-watermelon",
+    "categoryId": "juices",
+    "nameAr": "بطيخ مغربي",
+    "nameEn": "Moroccan watermelon",
+    "descriptionAr": "بطيخ مغربي من منيو ركن الجليد الأصلي.",
+    "calories": 200,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "banana-milk",
+    "categoryId": "juices",
+    "nameAr": "موز حليب",
+    "nameEn": "Banana milk",
+    "descriptionAr": "موز حليب من منيو ركن الجليد الأصلي.",
+    "calories": 160,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "grape-pomegranate",
+    "categoryId": "juices",
+    "nameAr": "عنب رمان",
+    "nameEn": "Grape pomegranate",
+    "descriptionAr": "عنب رمان من منيو ركن الجليد الأصلي.",
+    "calories": 110,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "lemon-mint",
+    "categoryId": "juices",
+    "nameAr": "ليمون نعناع",
+    "nameEn": "Lemon Mint",
+    "descriptionAr": "ليمون نعناع من منيو ركن الجليد الأصلي.",
+    "calories": 317,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "ginger",
+    "categoryId": "juices",
+    "nameAr": "زنجبيل",
+    "nameEn": "Ginger",
+    "descriptionAr": "زنجبيل من منيو ركن الجليد الأصلي.",
+    "calories": 17,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "oranges-lemons",
+    "categoryId": "juices",
+    "nameAr": "برتقال ليمون",
+    "nameEn": "Oranges lemons",
+    "descriptionAr": "برتقال ليمون من منيو ركن الجليد الأصلي.",
+    "calories": 130,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "kiwi",
+    "categoryId": "juices",
+    "nameAr": "كيوي",
+    "nameEn": "kiwi",
+    "descriptionAr": "كيوي من منيو ركن الجليد الأصلي.",
+    "calories": 100,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "carrot",
+    "categoryId": "juices",
+    "nameAr": "جزر",
+    "nameEn": "carrot",
+    "descriptionAr": "جزر من منيو ركن الجليد الأصلي.",
+    "calories": 105,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "anemia-remedy-mixture",
+    "categoryId": "juices",
+    "nameAr": "خلطة فقر الدم",
+    "nameEn": "Anemia remedy mixture",
+    "descriptionAr": "خلطة فقر الدم من منيو ركن الجليد الأصلي.",
+    "calories": 80,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "vitamin-c",
+    "categoryId": "juices",
+    "nameAr": "فيتامين C",
+    "nameEn": "Vitamin C",
+    "descriptionAr": "فيتامين C من منيو ركن الجليد الأصلي.",
+    "calories": 90,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "papaya",
+    "categoryId": "juices",
+    "nameAr": "بابايا",
+    "nameEn": "Papaya",
+    "descriptionAr": "بابايا من منيو ركن الجليد الأصلي.",
+    "calories": 260,
+    "sizes": [
+      {
+        "label": "سعر 4",
+        "price": 5
+      },
+      {
+        "label": "S",
+        "price": 6
+      },
+      {
+        "label": "M",
+        "price": 8
+      },
+      {
+        "label": "L",
+        "price": 10
+      }
+    ],
+    "image": "https://images.pexels.com/photos/128536/pexels-photo-128536.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "orange-pressed",
+    "categoryId": "juice_addons",
+    "nameAr": "برتقال كبس",
+    "nameEn": "Orange Pressed",
+    "descriptionAr": "برتقال كبس من منيو ركن الجليد الأصلي.",
+    "calories": 700,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 10
+      },
+      {
+        "label": "M",
+        "price": 12
+      },
+      {
+        "label": "L",
+        "price": 14
+      }
+    ],
+    "image": "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [
+      "bestSeller"
+    ],
+    "featured": true
+  },
+  {
+    "id": "fruit-salad",
+    "categoryId": "juice_addons",
+    "nameAr": "سلطة فواكة",
+    "nameEn": "Fruit Salad",
+    "descriptionAr": "سلطة فواكة من منيو ركن الجليد الأصلي.",
+    "calories": 110,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 10
+      },
+      {
+        "label": "M",
+        "price": 15
+      },
+      {
+        "label": "L",
+        "price": 18
+      }
+    ],
+    "image": "https://images.pexels.com/photos/1092730/pexels-photo-1092730.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "kunafa-with-cream",
+    "categoryId": "kunafa",
+    "nameAr": "قشطة",
+    "nameEn": "Kunafa with Cream",
+    "descriptionAr": "قشطة من منيو ركن الجليد الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "صغير",
+        "price": 8,
+        "calories": 530
+      },
+      {
+        "label": "وسط",
+        "price": 15,
+        "calories": 680
+      },
+      {
+        "label": "كبير",
+        "price": 25,
+        "calories": 1360
+      },
+      {
+        "label": "جامبو",
+        "price": 40,
+        "calories": 2312
+      }
+    ],
+    "image": "https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [
+      "bestSeller"
+    ],
+    "featured": true
+  },
+  {
+    "id": "kunafa-with-cheese",
+    "categoryId": "kunafa",
+    "nameAr": "جبن",
+    "nameEn": "Kunafa with Cheese",
+    "descriptionAr": "جبن من منيو ركن الجليد الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "صغير",
+        "price": 8,
+        "calories": 430
+      },
+      {
+        "label": "وسط",
+        "price": 15,
+        "calories": 650
+      },
+      {
+        "label": "كبير",
+        "price": 25,
+        "calories": 850
+      },
+      {
+        "label": "جامبو",
+        "price": 40,
+        "calories": 1150
+      }
+    ],
+    "image": "https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "kunafa-oreo",
+    "categoryId": "kunafa",
+    "nameAr": "أوريو",
+    "nameEn": "Kunafa Oreo",
+    "descriptionAr": "أوريو من منيو ركن الجليد الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "صغير",
+        "price": 8,
+        "calories": 650
+      },
+      {
+        "label": "وسط",
+        "price": 15,
+        "calories": 760
+      },
+      {
+        "label": "كبير",
+        "price": 25,
+        "calories": 1520
+      },
+      {
+        "label": "جامبو",
+        "price": 40,
+        "calories": 2584
+      }
+    ],
+    "image": "https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "kunafa-nutella",
+    "categoryId": "kunafa",
+    "nameAr": "نوتيلا",
+    "nameEn": "Kunafa Nutella",
+    "descriptionAr": "نوتيلا من منيو ركن الجليد الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "صغير",
+        "price": 10,
+        "calories": 820
+      },
+      {
+        "label": "وسط",
+        "price": 20,
+        "calories": 1000
+      },
+      {
+        "label": "كبير",
+        "price": 30,
+        "calories": 2000
+      },
+      {
+        "label": "جامبو",
+        "price": 45,
+        "calories": 3400
+      }
+    ],
+    "image": "https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "kunafa-pistachio",
+    "categoryId": "kunafa",
+    "nameAr": "بستاشيو",
+    "nameEn": "Kunafa Pistachio",
+    "descriptionAr": "بستاشيو من منيو ركن الجليد الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "صغير",
+        "price": 10,
+        "calories": 860
+      },
+      {
+        "label": "وسط",
+        "price": 20,
+        "calories": 1000
+      },
+      {
+        "label": "كبير",
+        "price": 30,
+        "calories": 2000
+      },
+      {
+        "label": "جامبو",
+        "price": 45,
+        "calories": 3400
+      }
+    ],
+    "image": "https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [
+      "bestSeller"
+    ],
+    "featured": true
+  },
+  {
+    "id": "kunafa-twix",
+    "categoryId": "kunafa",
+    "nameAr": "تويكس",
+    "nameEn": "Kunafa Twix",
+    "descriptionAr": "تويكس من منيو ركن الجليد الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "صغير",
+        "price": 10,
+        "calories": 640
+      },
+      {
+        "label": "وسط",
+        "price": 20,
+        "calories": 870
+      },
+      {
+        "label": "كبير",
+        "price": 30,
+        "calories": 1560
+      },
+      {
+        "label": "جامبو",
+        "price": 45,
+        "calories": 2652
+      }
+    ],
+    "image": "https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "kunafa-kinder",
+    "categoryId": "kunafa",
+    "nameAr": "كندر",
+    "nameEn": "Kunafa Kinder",
+    "descriptionAr": "كندر من منيو ركن الجليد الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "صغير",
+        "price": 10,
+        "calories": 640
+      },
+      {
+        "label": "وسط",
+        "price": 20,
+        "calories": 820
+      },
+      {
+        "label": "كبير",
+        "price": 30,
+        "calories": 1640
+      },
+      {
+        "label": "جامبو",
+        "price": 45,
+        "calories": 2788
+      }
+    ],
+    "image": "https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "kunafa-snickers",
+    "categoryId": "kunafa",
+    "nameAr": "سنيكرز",
+    "nameEn": "Kunafa Snickers",
+    "descriptionAr": "سنيكرز من منيو ركن الجليد الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "صغير",
+        "price": 10,
+        "calories": 640
+      },
+      {
+        "label": "وسط",
+        "price": 20,
+        "calories": 820
+      },
+      {
+        "label": "كبير",
+        "price": 30,
+        "calories": 1620
+      },
+      {
+        "label": "جامبو",
+        "price": 45,
+        "calories": 2788
+      }
+    ],
+    "image": "https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "kunafa-kit-kat",
+    "categoryId": "kunafa",
+    "nameAr": "كيت كات",
+    "nameEn": "Kunafa Kit Kat",
+    "descriptionAr": "كيت كات من منيو ركن الجليد الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "صغير",
+        "price": 10,
+        "calories": 510
+      },
+      {
+        "label": "وسط",
+        "price": 20,
+        "calories": 720
+      },
+      {
+        "label": "كبير",
+        "price": 30,
+        "calories": 1036
+      },
+      {
+        "label": "جامبو",
+        "price": 45,
+        "calories": 2448
+      }
+    ],
+    "image": "https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "kunafa-galaxy",
+    "categoryId": "kunafa",
+    "nameAr": "جلاكسي",
+    "nameEn": "Kunafa Galaxy",
+    "descriptionAr": "جلاكسي من منيو ركن الجليد الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "صغير",
+        "price": 10,
+        "calories": 640
+      },
+      {
+        "label": "وسط",
+        "price": 20,
+        "calories": 780
+      },
+      {
+        "label": "كبير",
+        "price": 30,
+        "calories": 1560
+      },
+      {
+        "label": "جامبو",
+        "price": 45,
+        "calories": 2652
+      }
+    ],
+    "image": "https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "kunafa-max",
+    "categoryId": "kunafa",
+    "nameAr": "ماكس",
+    "nameEn": "Kunafa Max",
+    "descriptionAr": "ماكس من منيو ركن الجليد الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "صغير",
+        "price": 10,
+        "calories": 645
+      },
+      {
+        "label": "وسط",
+        "price": 20,
+        "calories": 680
+      },
+      {
+        "label": "كبير",
+        "price": 30,
+        "calories": 1360
+      },
+      {
+        "label": "جامبو",
+        "price": 45,
+        "calories": 2312
+      }
+    ],
+    "image": "https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "kunafa-special-chocolate",
+    "categoryId": "kunafa",
+    "nameAr": "سبيشل شوكولاتة",
+    "nameEn": "Kunafa Special Chocolate",
+    "descriptionAr": "سبيشل شوكولاتة من منيو ركن الجليد الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "صغير",
+        "price": 10,
+        "calories": 430
+      },
+      {
+        "label": "وسط",
+        "price": 20,
+        "calories": 554
+      },
+      {
+        "label": "كبير",
+        "price": 25,
+        "calories": 655
+      },
+      {
+        "label": "جامبو",
+        "price": 45,
+        "calories": 780
+      }
+    ],
+    "image": "https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "kunafa-special-cream",
+    "categoryId": "kunafa",
+    "nameAr": "سبيشل قشطة",
+    "nameEn": "Kunafa Special Cream",
+    "descriptionAr": "سبيشل قشطة من منيو ركن الجليد الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "صغير",
+        "price": 10,
+        "calories": 430
+      },
+      {
+        "label": "وسط",
+        "price": 20,
+        "calories": 564
+      },
+      {
+        "label": "كبير",
+        "price": 30,
+        "calories": 655
+      },
+      {
+        "label": "جامبو",
+        "price": 45,
+        "calories": 780
+      }
+    ],
+    "image": "https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "kunafa-mix",
+    "categoryId": "kunafa",
+    "nameAr": "مشكل",
+    "nameEn": "Kunafa Mix",
+    "descriptionAr": "مشكل من منيو ركن الجليد الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "صغير",
+        "price": 10,
+        "calories": 510
+      },
+      {
+        "label": "وسط",
+        "price": 20,
+        "calories": 720
+      },
+      {
+        "label": "كبير",
+        "price": 30,
+        "calories": 820
+      },
+      {
+        "label": "جامبو",
+        "price": 45,
+        "calories": 1050
+      }
+    ],
+    "image": "https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "pancake",
+    "categoryId": "desserts",
+    "nameAr": "بانكيك",
+    "nameEn": "Pancake",
+    "descriptionAr": "بانكيك من منيو ركن الجليد الأصلي.",
+    "calories": 800,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 10
+      },
+      {
+        "label": "M",
+        "price": 15
+      },
+      {
+        "label": "L",
+        "price": 25
+      },
+      {
+        "label": "XL",
+        "price": 35
+      }
+    ],
+    "image": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [],
+    "featured": true
+  },
+  {
+    "id": "waffle",
+    "categoryId": "desserts",
+    "nameAr": "وافل",
+    "nameEn": "Waffle",
+    "descriptionAr": "وافل من منيو ركن الجليد الأصلي.",
+    "calories": 750,
+    "sizes": [
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 20
+      }
+    ],
+    "image": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [
+      "bestSeller"
+    ]
+  },
+  {
+    "id": "crepe",
+    "categoryId": "desserts",
+    "nameAr": "كريب",
+    "nameEn": "Crepe",
+    "descriptionAr": "كريب من منيو ركن الجليد الأصلي.",
+    "calories": 653,
+    "sizes": [
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 20
+      }
+    ],
+    "image": "https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "strawberry-milk-shake",
+    "categoryId": "milkshake",
+    "nameAr": "ميلك شيك فراولة",
+    "nameEn": "Strawberry Milk Shake",
+    "descriptionAr": "ميلك شيك فراولة من منيو ركن الجليد الأصلي.",
+    "calories": 177,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/880509/pexels-photo-880509.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "oreo-milk-shake",
+    "categoryId": "milkshake",
+    "nameAr": "ميلك شيك أوريو",
+    "nameEn": "Oreo Milk Shake",
+    "descriptionAr": "ميلك شيك أوريو من منيو ركن الجليد الأصلي.",
+    "calories": 627,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/880509/pexels-photo-880509.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [],
+    "featured": true
+  },
+  {
+    "id": "banana-milk-shake",
+    "categoryId": "milkshake",
+    "nameAr": "ميلك شيك موز",
+    "nameEn": "Banana Milk Shake",
+    "descriptionAr": "ميلك شيك موز من منيو ركن الجليد الأصلي.",
+    "calories": 165,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/880509/pexels-photo-880509.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "mocha-milk-shake",
+    "categoryId": "milkshake",
+    "nameAr": "ميلك شيك موكا",
+    "nameEn": "Mocha Milk Shake",
+    "descriptionAr": "ميلك شيك موكا من منيو ركن الجليد الأصلي.",
+    "calories": 205,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/880509/pexels-photo-880509.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "nutella-milk-shake",
+    "categoryId": "milkshake",
+    "nameAr": "ميلك شيك نوتيلا",
+    "nameEn": "Nutella Milk Shake",
+    "descriptionAr": "ميلك شيك نوتيلا من منيو ركن الجليد الأصلي.",
+    "calories": 650,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/880509/pexels-photo-880509.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "lotus-milk-shake",
+    "categoryId": "milkshake",
+    "nameAr": "ميلك شيك لوتس",
+    "nameEn": "Lotus Milk Shake",
+    "descriptionAr": "ميلك شيك لوتس من منيو ركن الجليد الأصلي.",
+    "calories": 560,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/880509/pexels-photo-880509.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [],
+    "featured": true
+  },
+  {
+    "id": "pistachio-milk-shake",
+    "categoryId": "milkshake",
+    "nameAr": "ميلك شيك بستاشيو",
+    "nameEn": "Pistachio Milk Shake",
+    "descriptionAr": "ميلك شيك بستاشيو من منيو ركن الجليد الأصلي.",
+    "calories": 453,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/880509/pexels-photo-880509.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "cerelac-milk-shake",
+    "categoryId": "milkshake",
+    "nameAr": "ميلك شيك سيريلاك",
+    "nameEn": "Cerelac Milk Shake",
+    "descriptionAr": "ميلك شيك سيريلاك من منيو ركن الجليد الأصلي.",
+    "calories": 346,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/880509/pexels-photo-880509.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [
+      "new"
+    ]
+  },
+  {
+    "id": "special-flavor",
+    "categoryId": "flavors",
+    "nameAr": "نكهة خاصة",
+    "nameEn": "Special Flavor",
+    "descriptionAr": "نكهة خاصة من منيو ركن الجليد الأصلي.",
+    "calories": 80,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/28902894/pexels-photo-28902894.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "seven",
+    "categoryId": "flavors",
+    "nameAr": "سفن",
+    "nameEn": "Seven",
+    "descriptionAr": "سفن من منيو ركن الجليد الأصلي.",
+    "calories": 190,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/28902894/pexels-photo-28902894.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "mojito",
+    "categoryId": "flavors",
+    "nameAr": "موهيتو",
+    "nameEn": "Mojito",
+    "descriptionAr": "موهيتو من منيو ركن الجليد الأصلي.",
+    "calories": 50,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/28902894/pexels-photo-28902894.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [
+      "bestSeller"
+    ],
+    "featured": true
+  },
+  {
+    "id": "rita",
+    "categoryId": "flavors",
+    "nameAr": "ريتا",
+    "nameEn": "Rita",
+    "descriptionAr": "ريتا من منيو ركن الجليد الأصلي.",
+    "calories": 73,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/28902894/pexels-photo-28902894.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "mix",
+    "categoryId": "flavors",
+    "nameAr": "ميكس",
+    "nameEn": "Mix",
+    "descriptionAr": "ميكس من منيو ركن الجليد الأصلي.",
+    "calories": 210,
+    "sizes": [
+      {
+        "label": "S",
+        "price": 8
+      },
+      {
+        "label": "M",
+        "price": 10
+      },
+      {
+        "label": "L",
+        "price": 12
+      }
+    ],
+    "image": "https://images.pexels.com/photos/28902894/pexels-photo-28902894.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "1-liter",
+    "categoryId": "gallons",
+    "nameAr": "1 لتر",
+    "nameEn": "1 Liter",
+    "descriptionAr": "قسم الجالون العصير من المنيو الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "1 لتر",
+        "price": 18
+      }
+    ],
+    "image": "https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "1-5-liter",
+    "categoryId": "gallons",
+    "nameAr": "1.5 لتر",
+    "nameEn": "1.5 Liter",
+    "descriptionAr": "قسم الجالون العصير من المنيو الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "1.5 لتر",
+        "price": 25
+      }
+    ],
+    "image": "https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "2-liter",
+    "categoryId": "gallons",
+    "nameAr": "2 لتر",
+    "nameEn": "2 Liter",
+    "descriptionAr": "قسم الجالون العصير من المنيو الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "2 لتر",
+        "price": 32
+      }
+    ],
+    "image": "https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "3-liter",
+    "categoryId": "gallons",
+    "nameAr": "3 لتر",
+    "nameEn": "3 Liter",
+    "descriptionAr": "قسم الجالون العصير من المنيو الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "3 لتر",
+        "price": 45
+      }
+    ],
+    "image": "https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "5-liter",
+    "categoryId": "gallons",
+    "nameAr": "5 لتر",
+    "nameEn": "5 Liter",
+    "descriptionAr": "قسم الجالون العصير من المنيو الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "5 لتر",
+        "price": 70
+      }
+    ],
+    "image": "https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "10-liter",
+    "categoryId": "gallons",
+    "nameAr": "10 لتر",
+    "nameEn": "10 Liter",
+    "descriptionAr": "قسم الجالون العصير من المنيو الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "10 لتر",
+        "price": 140
+      }
+    ],
+    "image": "https://images.pexels.com/photos/338713/pexels-photo-338713.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "1-liter",
+    "categoryId": "pressed_gallons",
+    "nameAr": "1 لتر",
+    "nameEn": "1 Liter",
+    "descriptionAr": "الجالون الكبس من المنيو الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "1 لتر",
+        "price": 25
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5946617/pexels-photo-5946617.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "1-5-liter",
+    "categoryId": "pressed_gallons",
+    "nameAr": "1.5 لتر",
+    "nameEn": "1.5 Liter",
+    "descriptionAr": "الجالون الكبس من المنيو الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "1.5 لتر",
+        "price": 35
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5946617/pexels-photo-5946617.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "2-liter",
+    "categoryId": "pressed_gallons",
+    "nameAr": "2 لتر",
+    "nameEn": "2 Liter",
+    "descriptionAr": "الجالون الكبس من المنيو الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "2 لتر",
+        "price": 45
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5946617/pexels-photo-5946617.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "3-liter",
+    "categoryId": "pressed_gallons",
+    "nameAr": "3 لتر",
+    "nameEn": "3 Liter",
+    "descriptionAr": "الجالون الكبس من المنيو الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "3 لتر",
+        "price": 72
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5946617/pexels-photo-5946617.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "5-liter",
+    "categoryId": "pressed_gallons",
+    "nameAr": "5 لتر",
+    "nameEn": "5 Liter",
+    "descriptionAr": "الجالون الكبس من المنيو الأصلي.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "5 لتر",
+        "price": 130
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5946617/pexels-photo-5946617.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "juice-box-100-sar",
+    "categoryId": "boxes",
+    "nameAr": "بوكس عصير 100 ريال",
+    "nameEn": "Juice Box 100 SAR",
+    "descriptionAr": "بوكس عصير للطلبات العائلية والمناسبات.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "بوكس",
+        "price": 100
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5650049/pexels-photo-5650049.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [
+      "bestSeller"
+    ]
+  },
+  {
+    "id": "juice-box-150-sar",
+    "categoryId": "boxes",
+    "nameAr": "بوكس عصير 150 ريال",
+    "nameEn": "Juice Box 150 SAR",
+    "descriptionAr": "بوكس عصير كبير للضيافة والمناسبات.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "بوكس",
+        "price": 150
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5650049/pexels-photo-5650049.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": []
+  },
+  {
+    "id": "bridal-family",
+    "categoryId": "boxes",
+    "nameAr": "عرايسي عائلي",
+    "nameEn": "Bridal Family",
+    "descriptionAr": "عرض عرايسي عائلي بالحجمين M و L.",
+    "calories": null,
+    "sizes": [
+      {
+        "label": "M",
+        "price": 30
+      },
+      {
+        "label": "L",
+        "price": 40
+      }
+    ],
+    "image": "https://images.pexels.com/photos/5650049/pexels-photo-5650049.jpeg?auto=compress&cs=tinysrgb&w=900",
+    "badges": [],
+    "featured": true
+  }
 ]

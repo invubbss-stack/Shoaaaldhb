@@ -1,12 +1,17 @@
 {
-  "brandAr": "ركن الجليد",
-  "brandSubtitleAr": "للعصائر والكنافة",
-  "brandEn": "Al-Jaleed Corner",
+  "brandAr": "ركن الجليد للعصائر والكنافة",
+  "brandSubtitleAr": "AL-JALEED CORNER FOR JUICES & KUNAFA",
+  "brandEn": "AL-JALEED CORNER FOR JUICES & KUNAFA",
   "phone": "0530432368",
   "whatsapp": "966530432368",
   "delivery": "🚚 التوصيل مجاني",
-  "addressLines": ["الرياض", "حي العزيزية", "شارع محمد رشيد رضا"],
-  "seasonalBadge": "عرض موسمي",
+  "addressLines": [
+    "الرياض",
+    "حي العزيزية",
+    "شارع محمد رشيد رضا",
+    "أمام أسواق هير المركزية ومركز سارة"
+  ],
+  "seasonalBadge": "منيو ركن الجليد الأصلي",
   "currency": "ريال",
   "qrUrl": "https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https%3A%2F%2Finvubbss-stack.github.io%2FRukn-Al-Jali%2F",
   "heroIntervalMs": 6500
