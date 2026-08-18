@@ -2,253 +2,82 @@
 <html lang="ar" dir="rtl">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="منيو ركن الجليد للعصائر والكنافة مع عروض يومية وعرض المنتجات بشكل تفاعلي." />
-  <meta name="theme-color" content="#0a0f0a" />
-  <title>ركن الجليد للعصائر والكنافة</title>
-  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="QR Pro — ماسح ومنشئ رموز QR احترافي يدعم الكاميرا، الصور، التخصيص، السجل و PWA." />
+  <meta name="theme-color" content="#08090D" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <style>
-    * { font-family: 'Noto Sans Arabic', sans-serif; }
-
-    body {
-      min-height: 100vh;
-      overflow: hidden;
-      background: #0a0f0a;
-    }
-
-    .bg-mesh {
-      background:
-        radial-gradient(ellipse at 20% 50%, rgba(34, 197, 94, 0.08) 0%, transparent 50%),
-        radial-gradient(ellipse at 80% 20%, rgba(251, 191, 36, 0.06) 0%, transparent 50%),
-        radial-gradient(ellipse at 50% 80%, rgba(74, 222, 128, 0.05) 0%, transparent 50%),
-        linear-gradient(180deg, #0a0f0a 0%, #111a11 100%);
-    }
-
-    .glass-card {
-      background: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(20px);
-      -webkit-backdrop-filter: blur(20px);
-      border: 1px solid rgba(255, 255, 255, 0.2);
-    }
-
-    .glass-nav {
-      background: rgba(255, 255, 255, 0.08);
-      backdrop-filter: blur(30px);
-      -webkit-backdrop-filter: blur(30px);
-      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-    }
-
-    @keyframes floatLeaf {
-      0% { transform: translate(0, 0) rotate(0deg); opacity: 0.7; }
-      25% { transform: translate(30px, -40px) rotate(45deg); opacity: 0.5; }
-      50% { transform: translate(-20px, -80px) rotate(90deg); opacity: 0.3; }
-      75% { transform: translate(40px, -120px) rotate(135deg); opacity: 0.2; }
-      100% { transform: translate(0, -160px) rotate(180deg); opacity: 0; }
-    }
-
-    .particle {
-      position: absolute;
-      pointer-events: none;
-      animation: floatLeaf 8s infinite ease-in-out;
-    }
-
-    .hero-slide {
-      position: absolute;
-      inset: 0;
-      opacity: 0;
-      transform: scale(1.05);
-      transition: opacity 1.2s ease, transform 1.2s ease;
-    }
-
-    .hero-slide.active { opacity: 1; transform: scale(1); }
-
-    .product-card { transition: transform 0.4s ease, box-shadow 0.4s ease; }
-
-    .product-card:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
-    }
-
-    .card-img { transition: transform 0.6s ease; }
-    .product-card:hover .card-img { transform: scale(1.08); }
-
-    .cat-tab {
-      color: rgba(255, 255, 255, 0.7);
-      transition: all 0.3s ease;
-      cursor: pointer;
-    }
-
-    .cat-tab.active {
-      background: linear-gradient(135deg, #4ade80, #22c55e);
-      color: #fff;
-      box-shadow: 0 4px 20px rgba(74, 222, 128, 0.4);
-    }
-
-    @keyframes marquee {
-      0% { transform: translateX(100%); }
-      100% { transform: translateX(-100%); }
-    }
-
-    .marquee-text { animation: marquee 30s linear infinite; }
-    .badge-best { background: linear-gradient(135deg, #f59e0b, #d97706); }
-    .badge-new { background: linear-gradient(135deg, #22c55e, #16a34a); }
-  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <title>QR Pro — ماسح ومنشئ رموز QR</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="https://unpkg.com/html5-qrcode@2.3.8/html5-qrcode.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/qr-code-styling@1.9.2/lib/qr-code-styling.js"></script>
+  <script defer src="https://unpkg.com/lucide@0.468.0/dist/umd/lucide.min.js"></script>
+  <script defer src="app.js"></script>
 </head>
-<body class="bg-mesh w-full">
-  <div id="particles" class="fixed inset-0 pointer-events-none z-0"></div>
-
-  <header class="glass-nav fixed top-0 left-0 right-0 z-50 px-8 py-3 flex items-center justify-between">
-    <div class="flex items-center gap-4">
-      <div class="text-white font-extrabold text-[26px]">ركن الجليد 🧊</div>
-      <div class="text-lg text-white/70 font-semibold">للعصائر والكنافة</div>
-    </div>
-
-    <nav id="cat-tabs" class="flex gap-2 overflow-x-auto max-w-[60%]" aria-label="تصنيفات المنيو"></nav>
-
-    <div class="flex items-center gap-4">
-      <span id="live-clock" class="text-white/80 text-lg font-medium tabular-nums"></span>
-    </div>
-  </header>
-
-  <main class="pt-16 pb-14 px-8 flex gap-6 h-screen">
-    <section id="hero" class="relative w-[45%] rounded-3xl overflow-hidden flex-shrink-0" aria-label="المنتجات المميزة">
-      <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/30 pointer-events-none rounded-3xl z-10"></div>
-    </section>
-
-    <section class="flex-1 overflow-hidden" aria-label="قائمة المنتجات">
-      <div id="products-grid" class="grid grid-cols-2 gap-4 h-full overflow-y-auto pr-2" style="max-height: calc(100vh - 8rem);"></div>
-    </section>
-  </main>
-
-  <footer class="fixed bottom-0 left-0 right-0 z-50 glass-nav py-3 px-6 overflow-hidden">
-    <div id="offers" class="flex items-center gap-8 whitespace-nowrap marquee-text"></div>
-  </footer>
-
-  <script>
-    const categories = ['العصائر', 'الكوكتيلات', 'الموهيتو', 'الكنافة', 'الوافل', 'البان كيك', 'الكريب'];
-
-    const products = [
-      { name: 'مانجو طبيعي', icon: '🥭', description: 'عصير مانجو طازج 100% بدون إضافات', cardDescription: 'عصير مانجو طازج بدون إضافات', price: '18 ريال', calories: '210 سعرة', image: 'https://images.pexels.com/photos/36763152/pexels-photo-36763152.jpeg?auto=compress&cs=tinysrgb&w=800', color: 'rgb(187, 247, 208)', badge: 'الأكثر مبيعاً', badgeClass: 'badge-best' },
-      { name: 'كوكتيل الفواكه', icon: '🍓', description: 'مزيج من ٥ فواكه طازجة', price: '22 ريال', calories: '280 سعرة', image: 'https://images.pexels.com/photos/5416259/pexels-photo-5416259.jpeg?auto=compress&cs=tinysrgb&w=800', color: 'rgb(253, 230, 138)', badge: 'جديد', badgeClass: 'badge-new' },
-      { name: 'عصير بطيخ', icon: '🍉', description: 'بطيخ أحمر منعش', price: '14 ريال', calories: '140 سعرة', image: 'https://images.pexels.com/photos/5668213/pexels-photo-5668213.jpeg?auto=compress&cs=tinysrgb&w=800', color: 'rgb(254, 202, 202)' },
-      { name: 'كيوي', icon: '🥝', description: 'كيوي طازج مع لمسة ليمون', price: '17 ريال', calories: '170 سعرة', image: 'https://images.pexels.com/photos/14930492/pexels-photo-14930492.jpeg?auto=compress&cs=tinysrgb&w=800', color: 'rgb(167, 243, 208)' },
-      { name: 'موهيتو ليمون', icon: '🍋', description: 'ليمون منعش مع نعناع', price: '19 ريال', calories: '90 سعرة', image: 'https://images.pexels.com/photos/28902894/pexels-photo-28902894.jpeg?auto=compress&cs=tinysrgb&w=800', color: 'rgb(187, 247, 208)' },
-      { name: 'موهيتو فراولة', icon: '🍓', description: 'فراولة طازجة مع نعناع', price: '20 ريال', calories: '95 سعرة', image: 'https://images.pexels.com/photos/7259054/pexels-photo-7259054.jpeg?auto=compress&cs=tinysrgb&w=800', color: 'rgb(254, 205, 211)', badge: 'جديد', badgeClass: 'badge-new' },
-      { name: 'كنافة نابلسية', icon: '🧀', description: 'كنافة بالجبن النابلسي', price: '24 ريال', calories: '520 سعرة', image: 'https://images.pexels.com/photos/19559293/pexels-photo-19559293.jpeg?auto=compress&cs=tinysrgb&w=800', color: 'rgb(253, 230, 138)', badge: 'الأكثر مبيعاً', badgeClass: 'badge-best' },
-      { name: 'كنافة بالقشطة', icon: '🥮', description: 'كنافة بالقشطة الطازجة', price: '26 ريال', calories: '560 سعرة', image: 'https://images.pexels.com/photos/37140467/pexels-photo-37140467.jpeg?auto=compress&cs=tinysrgb&w=800', color: 'rgb(254, 215, 170)' },
-      { name: 'وافل نوتيلا', icon: '🧇', description: 'وافل مقرمش مع نوتيلا', price: '27 ريال', calories: '610 سعرة', image: 'https://images.pexels.com/photos/9501440/pexels-photo-9501440.jpeg?auto=compress&cs=tinysrgb&w=800', color: 'rgb(254, 215, 170)' },
-      { name: 'بان كيك', icon: '🥞', description: 'بان كيك مع شراب القيقب', price: '23 ريال', calories: '480 سعرة', image: 'https://images.pexels.com/photos/821398/pexels-photo-821398.jpeg?auto=compress&cs=tinysrgb&w=800', color: 'rgb(233, 213, 255)' },
-      { name: 'كريب شوكولاتة', icon: '🥐', description: 'كريب مع شوكولاتة بلجيكية', price: '25 ريال', calories: '530 سعرة', image: 'https://images.pexels.com/photos/3225499/pexels-photo-3225499.jpeg?auto=compress&cs=tinysrgb&w=800', color: 'rgb(254, 205, 211)', badge: 'جديد', badgeClass: 'badge-new' }
-    ];
-
-    const offers = [
-      ['🔥 اشترِ 2 واحصل على الثالث مجاناً', 'text-yellow-300 font-bold'],
-      ['🍓 عصير اليوم 12 ريال', 'text-white/80 font-medium'],
-      ['🧀 الكنافة الطازجة تُحضّر عند الطلب', 'text-green-300 font-bold'],
-      ['✨ جميع العصائر من فواكه طازجة', 'text-white/80 font-medium'],
-      ['🎉 خصم 20% على الطلبات الكبيرة', 'text-orange-300 font-bold'],
-      ['🍹 عصير مجاني مع كل كنافة', 'text-white/80 font-medium']
-    ];
-
-    const tabsContainer = document.getElementById('cat-tabs');
-    const hero = document.getElementById('hero');
-    const productsGrid = document.getElementById('products-grid');
-    const offersContainer = document.getElementById('offers');
-
-    categories.forEach((category, index) => {
-      const tab = document.createElement('button');
-      tab.className = `cat-tab px-4 py-2 rounded-full text-sm font-semibold whitespace-nowrap ${index === 0 ? 'active' : ''}`;
-      tab.dataset.cat = index;
-      tab.textContent = category;
-      tabsContainer.appendChild(tab);
-    });
-
-    products.forEach((product, index) => {
-      const slide = document.createElement('div');
-      slide.className = `hero-slide flex flex-col items-center justify-center p-8 ${index === 0 ? 'active' : ''}`;
-      slide.innerHTML = `
-        <img class="w-64 h-64 object-cover rounded-full shadow-2xl mb-6" src="${product.image}" alt="${product.name}">
-        <h1 class="text-4xl font-black text-white text-center mb-2">${product.name}</h1>
-        <p class="text-lg text-center" style="color: ${product.color};">${product.description}</p>
-        <div class="flex gap-4 mt-4">
-          <span class="text-white font-bold text-2xl px-6 py-2 rounded-full" style="background: linear-gradient(135deg, #f59e0b, #d97706);">${product.price}</span>
-          <span class="text-white font-bold text-lg px-4 py-2 rounded-full" style="background: linear-gradient(135deg, #22c55e, #16a34a);">${product.calories}</span>
-        </div>`;
-      hero.insertBefore(slide, hero.querySelector('.z-10'));
-
-      const card = document.createElement('article');
-      card.className = 'product-card glass-card rounded-2xl overflow-hidden';
-      card.innerHTML = `
-        <div class="relative overflow-hidden h-36">
-          <img class="card-img w-full h-full object-cover" src="${product.image}" alt="${product.name}">
-          ${product.badge ? `<span class="${product.badgeClass} absolute top-2 right-2 text-white text-xs font-bold px-2 py-1 rounded-full">${product.badge}</span>` : ''}
-        </div>
-        <div class="p-3">
-          <h3 class="text-white font-bold mb-1 text-[21px]">${product.icon} ${product.name}</h3>
-          <p class="text-white/50 mb-2 text-[18px]">${product.cardDescription || product.description}</p>
-          <div class="flex justify-between items-center">
-            <span class="text-yellow-300 font-bold text-[18px]">${product.price}</span>
-            <span class="text-white/40 text-[18px]">${product.calories}</span>
+<body>
+  <a class="skip-link" href="#app-main" data-i18n="skip">تخطي إلى المحتوى</a>
+  <div class="ambient" aria-hidden="true"></div>
+  <aside class="desktop-sidebar glass" aria-label="التنقل الرئيسي">
+    <div class="brand"><img src="assets/logo.svg" alt="" /><div><strong>QR Pro</strong><span data-i18n="tagline">ماسح ومنشئ رموز QR</span></div></div>
+    <nav class="side-nav" data-nav></nav>
+    <button class="btn ghost full" data-action="open-settings"><i data-lucide="settings"></i><span data-i18n="settings">الإعدادات</span></button>
+    <div class="version"><span data-i18n="about">عن التطبيق</span><b>v1.0.0</b></div>
+  </aside>
+  <div class="app-shell">
+    <header class="topbar glass">
+      <button class="icon-btn" data-action="open-drawer" aria-label="القائمة"><i data-lucide="menu"></i></button>
+      <div class="top-title"><b>QR Pro</b><span data-page-title>ماسح QR</span></div>
+      <div class="header-actions">
+        <button class="icon-btn scanner-only" data-action="switch-camera" aria-label="تبديل الكاميرا"><i data-lucide="switch-camera"></i></button>
+        <button class="icon-btn scanner-only" data-action="toggle-flash" aria-label="الفلاش"><i data-lucide="zap"></i></button>
+      </div>
+    </header>
+    <main id="app-main" class="main" tabindex="-1">
+      <section id="scanner" class="page active" data-page="scanner" aria-labelledby="scanner-title">
+        <div class="hero-copy"><p class="eyebrow" data-i18n="scanEyebrow">ماسح QR</p><h1 id="scanner-title" data-i18n="scanTitle">ماسح QR</h1><p data-i18n="scanDesc">وجّه الكاميرا نحو رمز QR</p></div>
+        <div class="scanner-card glass">
+          <div id="reader" class="camera-preview"><div class="scan-frame"><span></span><span></span><span></span><span></span><div class="laser"></div></div><div class="camera-state" data-camera-state><i data-lucide="camera"></i><p data-i18n="cameraIdle">اضغط بدء المسح لتشغيل الكاميرا</p></div></div>
+          <input id="image-input" type="file" accept="image/*" hidden />
+          <div class="button-grid">
+            <button class="btn primary" data-action="start-scan"><i data-lucide="play"></i><span data-i18n="startScan">بدء المسح</span></button>
+            <button class="btn danger" data-action="stop-scan"><i data-lucide="square"></i><span data-i18n="stop">إيقاف</span></button>
+            <button class="btn secondary" data-action="pick-image"><i data-lucide="image-plus"></i><span data-i18n="pickImage">اختيار صورة</span></button>
+            <button class="btn ghost" data-action="pick-image"><i data-lucide="images"></i><span data-i18n="gallery">المعرض</span></button>
           </div>
-        </div>`;
-      productsGrid.appendChild(card);
-    });
-
-    offers.forEach(([text, classes]) => {
-      const span = document.createElement('span');
-      span.className = `${classes} text-[18px]`;
-      span.textContent = text;
-      offersContainer.appendChild(span);
-    });
-
-    function updateClock() {
-      const now = new Date();
-      document.getElementById('live-clock').textContent = now.toLocaleTimeString('ar-SA', { hour: '2-digit', minute: '2-digit' });
-    }
-    updateClock();
-    setInterval(updateClock, 1000);
-
-    const slides = document.querySelectorAll('.hero-slide');
-    const tabs = document.querySelectorAll('.cat-tab');
-    let currentSlide = 0;
-
-    function activateSlide(index) {
-      slides[currentSlide].classList.remove('active');
-      currentSlide = index;
-      slides[currentSlide].classList.add('active');
-      tabs.forEach((tab, tabIndex) => tab.classList.toggle('active', tabIndex === currentSlide));
-    }
-
-    function nextSlide() {
-      activateSlide((currentSlide + 1) % slides.length);
-    }
-
-    let autoPlay = setInterval(nextSlide, 6000);
-
-    tabs.forEach((tab) => {
-      tab.addEventListener('click', () => {
-        clearInterval(autoPlay);
-        activateSlide(Number(tab.dataset.cat));
-        autoPlay = setInterval(nextSlide, 6000);
-      });
-    });
-
-    const particleContainer = document.getElementById('particles');
-    const leafEmojis = ['🍃', '🌿', '✨', '💧', '🍊', '🍋', '🥭'];
-
-    for (let i = 0; i < 15; i += 1) {
-      const particle = document.createElement('span');
-      particle.className = 'particle text-xl';
-      particle.textContent = leafEmojis[i % leafEmojis.length];
-      particle.style.left = `${Math.random() * 100}%`;
-      particle.style.top = `${60 + Math.random() * 40}%`;
-      particle.style.animationDelay = `${Math.random() * 8}s`;
-      particle.style.animationDuration = `${6 + Math.random() * 6}s`;
-      particleContainer.appendChild(particle);
-    }
-  </script>
+        </div>
+      </section>
+      <section id="generator" class="page" data-page="generator" aria-labelledby="generator-title">
+        <div class="hero-copy"><p class="eyebrow" data-i18n="createEyebrow">إنشاء QR</p><h1 id="generator-title" data-i18n="createTitle">إنشاء QR</h1><p data-i18n="createDesc">أنشئ رمز QR مخصص خلال ثوانٍ</p></div>
+        <div class="generator-layout">
+          <form class="creator glass" id="qr-form">
+            <div class="type-tabs" id="type-tabs" role="tablist"></div>
+            <div id="dynamic-fields" class="fields"></div>
+            <div class="customizer"><h2 data-i18n="customize">تخصيص الرمز</h2><div class="settings-grid">
+              <label><span data-i18n="qrColor">لون الرمز</span><input id="qr-color" type="color" value="#08090D"></label><label><span data-i18n="bgColor">لون الخلفية</span><input id="bg-color" type="color" value="#ffffff"></label>
+              <label><span data-i18n="style">النمط</span><select id="dot-style"><option value="square">Classic</option><option value="rounded">Rounded</option><option value="dots">Dots</option><option value="classy-rounded">Modern</option></select></label>
+              <label><span data-i18n="size">الحجم</span><select id="qr-size"><option>256</option><option selected>512</option><option>1024</option><option>2048</option></select></label>
+              <label><span data-i18n="errorLevel">تصحيح الأخطاء</span><select id="error-level"><option>L</option><option>M</option><option>Q</option><option selected>H</option></select></label>
+              <label><span data-i18n="margin">الهامش</span><input id="qr-margin" type="range" min="0" max="32" value="12"></label>
+              <label class="file-label"><span data-i18n="logo">الشعار</span><input id="logo-input" type="file" accept="image/*"></label>
+            </div></div>
+          </form>
+          <section class="preview glass" aria-live="polite"><h2 data-i18n="livePreview">معاينة مباشرة</h2><div id="qr-preview" class="qr-box"></div><div class="button-grid"><button class="btn primary" data-action="download-png"><i data-lucide="download"></i><span data-i18n="downloadPng">تحميل PNG</span></button><button class="btn secondary" data-action="download-svg"><i data-lucide="file-code"></i><span data-i18n="downloadSvg">تحميل SVG</span></button><button class="btn ghost" data-action="share-qr"><i data-lucide="share-2"></i><span data-i18n="share">مشاركة</span></button><button class="btn ghost" data-action="copy-content"><i data-lucide="copy"></i><span data-i18n="copyContent">نسخ المحتوى</span></button><button class="btn success" data-action="save-generated"><i data-lucide="save"></i><span data-i18n="save">حفظ</span></button></div></section>
+        </div>
+      </section>
+      <section id="history" class="page" data-page="history" aria-labelledby="history-title">
+        <div class="history-head"><div class="hero-copy"><p class="eyebrow" data-i18n="history">السجل</p><h1 id="history-title" data-i18n="history">السجل</h1></div><button class="btn danger" data-action="delete-all"><i data-lucide="trash-2"></i><span data-i18n="deleteAll">حذف الكل</span></button></div>
+        <div class="stats"><article class="glass"><b id="stat-total">0</b><span data-i18n="totalOps">إجمالي العمليات</span></article><article class="glass"><b id="stat-scanned">0</b><span data-i18n="scanned">QR الممسوحة</span></article><article class="glass"><b id="stat-generated">0</b><span data-i18n="generated">QR المنشأة</span></article></div>
+        <div class="history-tools glass"><input id="history-search" type="search" placeholder="ابحث في السجل..." data-i18n-placeholder="searchHistory" /><select id="history-filter"><option value="all" data-i18n="all">الكل</option><option value="scanned" data-i18n="scanned">QR الممسوحة</option><option value="generated" data-i18n="generated">QR المنشأة</option></select><select id="history-sort"><option value="newest" data-i18n="newest">الأحدث</option><option value="oldest" data-i18n="oldest">الأقدم</option><option value="alpha" data-i18n="alpha">أبجدي</option></select></div>
+        <div id="history-list" class="history-list" aria-live="polite"></div>
+      </section>
+    </main>
+    <nav class="bottom-nav glass" data-nav aria-label="التنقل السفلي"></nav>
+  </div>
+  <div id="drawer" class="drawer-backdrop" aria-hidden="true"><aside class="drawer glass"><div class="brand"><img src="assets/logo.svg" alt="" /><div><strong>QR Pro</strong><span data-i18n="tagline">ماسح ومنشئ رموز QR</span></div></div><nav class="drawer-nav" data-nav></nav><div class="drawer-settings"><h3 data-i18n="settings">الإعدادات</h3><label><span data-i18n="darkMode">الوضع الليلي</span><input type="checkbox" data-setting="quickDark"></label><label><span data-i18n="language">اللغة</span><select data-setting="language"><option value="ar">العربية</option><option value="en">English</option></select></label><label><span data-i18n="sound">الصوت</span><input type="checkbox" data-setting="sound"></label><label><span data-i18n="vibration">الاهتزاز</span><input type="checkbox" data-setting="vibration"></label><button class="btn secondary full" data-action="open-settings"><span data-i18n="settings">الإعدادات</span></button></div><div class="version"><span data-i18n="about">عن التطبيق</span><b>1.0.0</b></div></aside></div>
+  <div id="modal-root" class="modal-root" aria-live="assertive"></div>
+  <div id="toast-root" class="toast-root" aria-live="polite"></div>
 </body>
 </html>
